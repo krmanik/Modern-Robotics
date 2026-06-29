@@ -1,0 +1,1169 @@
+{
+  "generated": "2026-06-29T10:11:27.083Z",
+  "chapters": [
+    {
+      "id": "ch01",
+      "n": 1,
+      "title": "Preview",
+      "start": 21,
+      "end": 30,
+      "ex": null,
+      "pdf": "/book/ch01.pdf",
+      "exPdf": null,
+      "pages": 10,
+      "slides": [],
+      "videos": [
+        {
+          "label": "Welcome and Acknowledgments",
+          "url": "/coursera/course1/Week 1 - Introduction to Modern Robotics/01 - Welcome and Acknowledgments.mp4",
+          "vtt": "/coursera/course1/Week 1 - Introduction to Modern Robotics/01 - Welcome and Acknowledgments.vtt",
+          "yt": "9usycd3tnCk",
+          "week": "Introduction to Modern Robotics"
+        },
+        {
+          "label": "Introduction to the Lightboard",
+          "url": "/coursera/course1/Week 1 - Introduction to Modern Robotics/02 - Introduction to the Lightboard.mp4",
+          "vtt": "/coursera/course1/Week 1 - Introduction to Modern Robotics/02 - Introduction to the Lightboard.vtt",
+          "yt": "jVu-Hijns70",
+          "week": "Introduction to Modern Robotics"
+        }
+      ]
+    },
+    {
+      "id": "ch02",
+      "n": 2,
+      "title": "Configuration Space",
+      "start": 31,
+      "end": 76,
+      "ex": 58,
+      "pdf": "/book/ch02.pdf",
+      "exPdf": "/book/ch02-ex.pdf",
+      "pages": 46,
+      "slides": [
+        {
+          "label": "Ch02.2 (annotated)",
+          "url": "/slides/Ch02/pdf/Ch02.2-edited.pdf"
+        },
+        {
+          "label": "Ch02.2",
+          "url": "/slides/Ch02/pdf/Ch02.2.pdf"
+        },
+        {
+          "label": "Ch02.3 (annotated)",
+          "url": "/slides/Ch02/pdf/Ch02.3-edited.pdf"
+        },
+        {
+          "label": "Ch02.3",
+          "url": "/slides/Ch02/pdf/Ch02.3.pdf"
+        },
+        {
+          "label": "Ch02.5 (annotated)",
+          "url": "/slides/Ch02/pdf/Ch02.5-edited.pdf"
+        },
+        {
+          "label": "Ch02.5",
+          "url": "/slides/Ch02/pdf/Ch02.5.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Foundations of Robot Motion",
+          "url": "/coursera/course1/Week 2 - Chapter 2_  Configuration Space (Part 1 of 2)/03 - Foundations of Robot Motion.mp4",
+          "vtt": "/coursera/course1/Week 2 - Chapter 2_  Configuration Space (Part 1 of 2)/03 - Foundations of Robot Motion.vtt",
+          "yt": "csYtU2GY7FY",
+          "week": "Chapter 2_  Configuration Space (Part 1 of 2)"
+        },
+        {
+          "label": "Degrees of Freedom of a Rigid Body (Chapter 2 through 2.1)",
+          "url": "/coursera/course1/Week 2 - Chapter 2_  Configuration Space (Part 1 of 2)/04 - Degrees of Freedom of a Rigid Body (Chapter 2 through 2.1).mp4",
+          "vtt": "/coursera/course1/Week 2 - Chapter 2_  Configuration Space (Part 1 of 2)/04 - Degrees of Freedom of a Rigid Body (Chapter 2 through 2.1).vtt",
+          "yt": "z29hYlagOYM",
+          "week": "Chapter 2_  Configuration Space (Part 1 of 2)"
+        },
+        {
+          "label": "Degrees of Freedom of a Robot (Chapter 2.2)",
+          "url": "/coursera/course1/Week 2 - Chapter 2_  Configuration Space (Part 1 of 2)/05 - Degrees of Freedom of a Robot (Chapter 2.2).mp4",
+          "vtt": "/coursera/course1/Week 2 - Chapter 2_  Configuration Space (Part 1 of 2)/05 - Degrees of Freedom of a Robot (Chapter 2.2).vtt",
+          "yt": "zI64DyaRUvQ",
+          "week": "Chapter 2_  Configuration Space (Part 1 of 2)"
+        },
+        {
+          "label": "Configuration Space Topology (Chapter 2.3.1)",
+          "url": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/06 - Configuration Space Topology (Chapter 2.3.1).mp4",
+          "vtt": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/06 - Configuration Space Topology (Chapter 2.3.1).vtt",
+          "yt": "FyLNR3edOds",
+          "week": "Chapter 2_  Configuration Space (Part 2 of 2)"
+        },
+        {
+          "label": "Configuration Space Representation (Chapter 2.3.2)",
+          "url": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/07 - Configuration Space Representation (Chapter 2.3.2).mp4",
+          "vtt": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/07 - Configuration Space Representation (Chapter 2.3.2).vtt",
+          "yt": "PPgJPjCUIXU",
+          "week": "Chapter 2_  Configuration Space (Part 2 of 2)"
+        },
+        {
+          "label": "Configuration and Velocity Constraints (Chapter 2.4)",
+          "url": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/08 - Configuration and Velocity Constraints (Chapter 2.4).mp4",
+          "vtt": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/08 - Configuration and Velocity Constraints (Chapter 2.4).vtt",
+          "yt": "A14ArEZ47LE",
+          "week": "Chapter 2_  Configuration Space (Part 2 of 2)"
+        },
+        {
+          "label": "Task Space and Workspace (Chapter 2.5)",
+          "url": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/09 - Task Space and Workspace (Chapter 2.5).mp4",
+          "vtt": "/coursera/course1/Week 3 - Chapter 2_  Configuration Space (Part 2 of 2)/09 - Task Space and Workspace (Chapter 2.5).vtt",
+          "yt": "hTuW51CpUg4",
+          "week": "Chapter 2_  Configuration Space (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch03",
+      "n": 3,
+      "title": "Rigid-Body Motions",
+      "start": 77,
+      "end": 154,
+      "ex": 134,
+      "pdf": "/book/ch03.pdf",
+      "exPdf": "/book/ch03-ex.pdf",
+      "pages": 78,
+      "slides": [
+        {
+          "label": "Ch03.2a (annotated)",
+          "url": "/slides/Ch03/pdf/Ch03.2a-edited.pdf"
+        },
+        {
+          "label": "Ch03.2a",
+          "url": "/slides/Ch03/pdf/Ch03.2a.pdf"
+        },
+        {
+          "label": "Ch03.2b",
+          "url": "/slides/Ch03/pdf/Ch03.2b.pdf"
+        },
+        {
+          "label": "Ch03.3 (annotated)",
+          "url": "/slides/Ch03/pdf/Ch03.3-edited.pdf"
+        },
+        {
+          "label": "Ch03.3",
+          "url": "/slides/Ch03/pdf/Ch03.3.pdf"
+        },
+        {
+          "label": "Ch03.4 (annotated)",
+          "url": "/slides/Ch03/pdf/Ch03.4-edited.pdf"
+        },
+        {
+          "label": "Ch03.4",
+          "url": "/slides/Ch03/pdf/Ch03.4.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Introduction to Rigid-Body Motions (Chapter 3 through 3.1)",
+          "url": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/10 - Introduction to Rigid-Body Motions (Chapter 3 through 3.1).mp4",
+          "vtt": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/10 - Introduction to Rigid-Body Motions (Chapter 3 through 3.1).vtt",
+          "yt": "29LhXWjn7Pc",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 1 of 2)"
+        },
+        {
+          "label": "Rotation Matrices (Chapter 3.2.1, Part 1 of 2)",
+          "url": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/11 - Rotation Matrices (Chapter 3.2.1, Part 1 of 2).mp4",
+          "vtt": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/11 - Rotation Matrices (Chapter 3.2.1, Part 1 of 2).vtt",
+          "yt": "OZucG1DY_sY",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 1 of 2)"
+        },
+        {
+          "label": "Rotation Matrices (Chapter 3.2.1, Part 2 of 2)",
+          "url": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/12 - Rotation Matrices (Chapter 3.2.1, Part 2 of 2).mp4",
+          "vtt": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/12 - Rotation Matrices (Chapter 3.2.1, Part 2 of 2).vtt",
+          "yt": "OZucG1DY_sY",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 1 of 2)"
+        },
+        {
+          "label": "Angular Velocities (Chapter 3.2.2)",
+          "url": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/13 - Angular Velocities (Chapter 3.2.2).mp4",
+          "vtt": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/13 - Angular Velocities (Chapter 3.2.2).vtt",
+          "yt": "zJJldJYMxVU",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 1 of 2)"
+        },
+        {
+          "label": "Exponential Coordinates of Rotation (Chapter 3.2.3, Part 1 of 2)",
+          "url": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/14 - Exponential Coordinates of Rotation (Chapter 3.2.3, Part 1 of 2).mp4",
+          "vtt": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/14 - Exponential Coordinates of Rotation (Chapter 3.2.3, Part 1 of 2).vtt",
+          "yt": "v_KBHaG0mas",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 1 of 2)"
+        },
+        {
+          "label": "Exponential Coordinates of Rotation (Chapter 3.2.3, Part 2 of 2)",
+          "url": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/15 - Exponential Coordinates of Rotation (Chapter 3.2.3, Part 2 of 2).mp4",
+          "vtt": "/coursera/course1/Week 4 - Chapter 3_  Rigid-Body Motions (Part 1 of 2)/15 - Exponential Coordinates of Rotation (Chapter 3.2.3, Part 2 of 2).vtt",
+          "yt": "v_KBHaG0mas",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 1 of 2)"
+        },
+        {
+          "label": "Homogeneous Transformation Matrices (Chapter 3.3 through 3.3.1)",
+          "url": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/16 - Homogeneous Transformation Matrices (Chapter 3.3 through 3.3.1).mp4",
+          "vtt": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/16 - Homogeneous Transformation Matrices (Chapter 3.3 through 3.3.1).vtt",
+          "yt": "vlb3P7arbkU",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 2 of 2)"
+        },
+        {
+          "label": "Twists (Chapter 3.3.2, Part 1 of 2)",
+          "url": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/17 - Twists (Chapter 3.3.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/17 - Twists (Chapter 3.3.2, Part 1 of 2).vtt",
+          "yt": "mvGZtO_ruj0",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 2 of 2)"
+        },
+        {
+          "label": "Twists (Chapter 3.3.2, Part 2 of 2)",
+          "url": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/18 - Twists (Chapter 3.3.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/18 - Twists (Chapter 3.3.2, Part 2 of 2).vtt",
+          "yt": "mvGZtO_ruj0",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 2 of 2)"
+        },
+        {
+          "label": "Exponential Coordinates of Rigid-Body Motion (Chapter 3.3.3)",
+          "url": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/19 - Exponential Coordinates of Rigid-Body Motion (Chapter 3.3.3).mp4",
+          "vtt": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/19 - Exponential Coordinates of Rigid-Body Motion (Chapter 3.3.3).vtt",
+          "yt": "1jYMvm1U2D0",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 2 of 2)"
+        },
+        {
+          "label": "Wrenches (Chapter 3.4)",
+          "url": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/20 - Wrenches (Chapter 3.4).mp4",
+          "vtt": "/coursera/course1/Week 5 - Chapter 3_  Rigid-Body Motions (Part 2 of 2)/20 - Wrenches (Chapter 3.4).vtt",
+          "yt": "0wsYPJPGtKE",
+          "week": "Chapter 3_  Rigid-Body Motions (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch04",
+      "n": 4,
+      "title": "Forward Kinematics",
+      "start": 155,
+      "end": 188,
+      "ex": 178,
+      "pdf": "/book/ch04.pdf",
+      "exPdf": "/book/ch04-ex.pdf",
+      "pages": 34,
+      "slides": [
+        {
+          "label": "Ch04 (annotated)",
+          "url": "/slides/Ch04/pdf/Ch04-edited.pdf"
+        },
+        {
+          "label": "Ch04",
+          "url": "/slides/Ch04/pdf/Ch04.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Product of Exponentials Formula in the Space Frame (Chapter 4 through 4.1.2)",
+          "url": "/coursera/course2/Week 1 - Chapter 4_ Forward Kinematics/01 - Product of Exponentials Formula in the Space Frame (Chapter 4 through 4.1.2).mp4",
+          "vtt": "/coursera/course2/Week 1 - Chapter 4_ Forward Kinematics/01 - Product of Exponentials Formula in the Space Frame (Chapter 4 through 4.1.2).vtt",
+          "yt": "hE_Duih_7JE",
+          "week": "Chapter 4_ Forward Kinematics"
+        },
+        {
+          "label": "Product of Exponentials Formula in the End-Effector Frame (Chapter 4.1.3)",
+          "url": "/coursera/course2/Week 1 - Chapter 4_ Forward Kinematics/02 - Product of Exponentials Formula in the End-Effector Frame (Chapter 4.1.3).mp4",
+          "vtt": "/coursera/course2/Week 1 - Chapter 4_ Forward Kinematics/02 - Product of Exponentials Formula in the End-Effector Frame (Chapter 4.1.3).vtt",
+          "yt": "27jUrkFdyks",
+          "week": "Chapter 4_ Forward Kinematics"
+        },
+        {
+          "label": "Forward Kinematics Example",
+          "url": "/coursera/course2/Week 1 - Chapter 4_ Forward Kinematics/03 - Forward Kinematics Example.mp4",
+          "vtt": "/coursera/course2/Week 1 - Chapter 4_ Forward Kinematics/03 - Forward Kinematics Example.vtt",
+          "yt": "cKHsil0V6Qk",
+          "week": "Chapter 4_ Forward Kinematics"
+        }
+      ]
+    },
+    {
+      "id": "ch05",
+      "n": 5,
+      "title": "Velocity Kinematics & Statics",
+      "start": 189,
+      "end": 236,
+      "ex": 220,
+      "pdf": "/book/ch05.pdf",
+      "exPdf": "/book/ch05-ex.pdf",
+      "pages": 48,
+      "slides": [
+        {
+          "label": "Ch05.1 (annotated)",
+          "url": "/slides/Ch05/pdf/Ch05.1-edited.pdf"
+        },
+        {
+          "label": "Ch05.1",
+          "url": "/slides/Ch05/pdf/Ch05.1.pdf"
+        },
+        {
+          "label": "Ch05.2 (annotated)",
+          "url": "/slides/Ch05/pdf/Ch05.2-edited.pdf"
+        },
+        {
+          "label": "Ch05.2",
+          "url": "/slides/Ch05/pdf/Ch05.2.pdf"
+        },
+        {
+          "label": "Ch05.4 (annotated)",
+          "url": "/slides/Ch05/pdf/Ch05.4-edited.pdf"
+        },
+        {
+          "label": "Ch05.4",
+          "url": "/slides/Ch05/pdf/Ch05.4.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Velocity Kinematics and Statics (Chapter 5 Introduction)",
+          "url": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/04 - Velocity Kinematics and Statics (Chapter 5 Introduction).mp4",
+          "vtt": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/04 - Velocity Kinematics and Statics (Chapter 5 Introduction).vtt",
+          "yt": "6tj8QLF69Ok",
+          "week": "Chapter 5_ Velocity Kinematics and Statics"
+        },
+        {
+          "label": "Space Jacobian (Chapter 5.1 through 5.1.1)",
+          "url": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/05 - Space Jacobian (Chapter 5.1 through 5.1.1).mp4",
+          "vtt": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/05 - Space Jacobian (Chapter 5.1 through 5.1.1).vtt",
+          "yt": "KbI8HN3imtQ",
+          "week": "Chapter 5_ Velocity Kinematics and Statics"
+        },
+        {
+          "label": "Body Jacobian (Chapter 5.1.2 through 5.1.4)",
+          "url": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/06 - Body Jacobian (Chapter 5.1.2 through 5.1.4).mp4",
+          "vtt": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/06 - Body Jacobian (Chapter 5.1.2 through 5.1.4).vtt",
+          "yt": "69HeL2XvL9Y",
+          "week": "Chapter 5_ Velocity Kinematics and Statics"
+        },
+        {
+          "label": "Statics of Open Chains (Chapter 5.2)",
+          "url": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/07 - Statics of Open Chains (Chapter 5.2).mp4",
+          "vtt": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/07 - Statics of Open Chains (Chapter 5.2).vtt",
+          "yt": "eBti6XIoR5U",
+          "week": "Chapter 5_ Velocity Kinematics and Statics"
+        },
+        {
+          "label": "Singularities (Chapter 5.3)",
+          "url": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/08 - Singularities (Chapter 5.3).mp4",
+          "vtt": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/08 - Singularities (Chapter 5.3).vtt",
+          "yt": "vjJgTvnQpBs",
+          "week": "Chapter 5_ Velocity Kinematics and Statics"
+        },
+        {
+          "label": "Manipulability (Chapter 5.4)",
+          "url": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/09 - Manipulability (Chapter 5.4).mp4",
+          "vtt": "/coursera/course2/Week 2 - Chapter 5_ Velocity Kinematics and Statics/09 - Manipulability (Chapter 5.4).vtt",
+          "yt": "8VSrYDi_cs0",
+          "week": "Chapter 5_ Velocity Kinematics and Statics"
+        }
+      ]
+    },
+    {
+      "id": "ch06",
+      "n": 6,
+      "title": "Inverse Kinematics",
+      "start": 237,
+      "end": 262,
+      "ex": 254,
+      "pdf": "/book/ch06.pdf",
+      "exPdf": "/book/ch06-ex.pdf",
+      "pages": 26,
+      "slides": [
+        {
+          "label": "Ch06 (annotated)",
+          "url": "/slides/Ch06/pdf/Ch06-edited.pdf"
+        },
+        {
+          "label": "Ch06",
+          "url": "/slides/Ch06/pdf/Ch06.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Inverse Kinematics of Open Chains (Chapter 6 Introduction)",
+          "url": "/coursera/course2/Week 3 - Chapter 6_ Inverse Kinematics/10 - Inverse Kinematics of Open Chains (Chapter 6 Introduction).mp4",
+          "vtt": "/coursera/course2/Week 3 - Chapter 6_ Inverse Kinematics/10 - Inverse Kinematics of Open Chains (Chapter 6 Introduction).vtt",
+          "yt": "nin2TbMuhR0",
+          "week": "Chapter 6_ Inverse Kinematics"
+        },
+        {
+          "label": "Numerical Inverse Kinematics (Chapter 6.2, Part 1 of 2)",
+          "url": "/coursera/course2/Week 3 - Chapter 6_ Inverse Kinematics/11 - Numerical Inverse Kinematics (Chapter 6.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course2/Week 3 - Chapter 6_ Inverse Kinematics/11 - Numerical Inverse Kinematics (Chapter 6.2, Part 1 of 2).vtt",
+          "yt": "VhUA0jf7tI8",
+          "week": "Chapter 6_ Inverse Kinematics"
+        },
+        {
+          "label": "Numerical Inverse Kinematics (Chapter 6.2, Part 2 of 2)",
+          "url": "/coursera/course2/Week 3 - Chapter 6_ Inverse Kinematics/12 - Numerical Inverse Kinematics (Chapter 6.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course2/Week 3 - Chapter 6_ Inverse Kinematics/12 - Numerical Inverse Kinematics (Chapter 6.2, Part 2 of 2).vtt",
+          "yt": "VhUA0jf7tI8",
+          "week": "Chapter 6_ Inverse Kinematics"
+        }
+      ]
+    },
+    {
+      "id": "ch07",
+      "n": 7,
+      "title": "Kinematics of Closed Chains",
+      "start": 263,
+      "end": 288,
+      "ex": 281,
+      "pdf": "/book/ch07.pdf",
+      "exPdf": "/book/ch07-ex.pdf",
+      "pages": 26,
+      "slides": [],
+      "videos": [
+        {
+          "label": "Kinematics of Closed Chains (Chapter 7)",
+          "url": "/coursera/course2/Week 4 - Chapter 7_ Kinematics of Closed Chains/13 - Kinematics of Closed Chains (Chapter 7).mp4",
+          "vtt": "/coursera/course2/Week 4 - Chapter 7_ Kinematics of Closed Chains/13 - Kinematics of Closed Chains (Chapter 7).vtt",
+          "yt": "5wCK6XGC3ig",
+          "week": "Chapter 7_ Kinematics of Closed Chains"
+        }
+      ]
+    },
+    {
+      "id": "ch08",
+      "n": 8,
+      "title": "Dynamics of Open Chains",
+      "start": 289,
+      "end": 346,
+      "ex": 343,
+      "pdf": "/book/ch08.pdf",
+      "exPdf": "/book/ch08-ex.pdf",
+      "pages": 58,
+      "slides": [
+        {
+          "label": "Ch08.1a (annotated)",
+          "url": "/slides/Ch08/pdf/Ch08.1a-edited.pdf"
+        },
+        {
+          "label": "Ch08.1a",
+          "url": "/slides/Ch08/pdf/Ch08.1a.pdf"
+        },
+        {
+          "label": "Ch08.1b (annotated)",
+          "url": "/slides/Ch08/pdf/Ch08.1b-edited.pdf"
+        },
+        {
+          "label": "Ch08.1b",
+          "url": "/slides/Ch08/pdf/Ch08.1b.pdf"
+        },
+        {
+          "label": "Ch08.2 (annotated)",
+          "url": "/slides/Ch08/pdf/Ch08.2-edited.pdf"
+        },
+        {
+          "label": "Ch08.2",
+          "url": "/slides/Ch08/pdf/Ch08.2.pdf"
+        },
+        {
+          "label": "Ch08.5 (annotated)",
+          "url": "/slides/Ch08/pdf/Ch08.5-edited.pdf"
+        },
+        {
+          "label": "Ch08.5",
+          "url": "/slides/Ch08/pdf/Ch08.5.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Lagrangian Formulation of Dynamics (Chapter 8 through 8.1.2, Part 1 of 2)",
+          "url": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/01 - Lagrangian Formulation of Dynamics (Chapter 8 through 8.1.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/01 - Lagrangian Formulation of Dynamics (Chapter 8 through 8.1.2, Part 1 of 2).vtt",
+          "yt": "1U6y_68CjeY",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 1 of 2)"
+        },
+        {
+          "label": "Lagrangian Formulation of Dynamics (Chapter 8 through 8.1.2, Part 2 of 2)",
+          "url": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/02 - Lagrangian Formulation of Dynamics (Chapter 8 through 8.1.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/02 - Lagrangian Formulation of Dynamics (Chapter 8 through 8.1.2, Part 2 of 2).vtt",
+          "yt": "1U6y_68CjeY",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 1 of 2)"
+        },
+        {
+          "label": "Understanding the Mass Matrix (Chapter 8.1.3)",
+          "url": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/03 - Understanding the Mass Matrix (Chapter 8.1.3).mp4",
+          "vtt": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/03 - Understanding the Mass Matrix (Chapter 8.1.3).vtt",
+          "yt": "7PFQou5l9do",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 1 of 2)"
+        },
+        {
+          "label": "Dynamics of a Single Rigid Body (Chapter 8.2, Part 1 of 2)",
+          "url": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/04 - Dynamics of a Single Rigid Body (Chapter 8.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/04 - Dynamics of a Single Rigid Body (Chapter 8.2, Part 1 of 2).vtt",
+          "yt": "9pdqePt1Nbg",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 1 of 2)"
+        },
+        {
+          "label": "Dynamics of a Single Rigid Body (Chapter 8.2, Part 2 of 2)",
+          "url": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/05 - Dynamics of a Single Rigid Body (Chapter 8.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/05 - Dynamics of a Single Rigid Body (Chapter 8.2, Part 2 of 2).vtt",
+          "yt": "9pdqePt1Nbg",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 1 of 2)"
+        },
+        {
+          "label": "Newton-Euler Inverse Dynamics (Chapter 8.3)",
+          "url": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/06 - Newton-Euler Inverse Dynamics (Chapter 8.3).mp4",
+          "vtt": "/coursera/course3/Week 1 - Chapter 8_  Dynamics of Open Chains (Part 1 of 2)/06 - Newton-Euler Inverse Dynamics (Chapter 8.3).vtt",
+          "yt": "ZASVKAlegfQ",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 1 of 2)"
+        },
+        {
+          "label": "Forward Dynamics of Open Chains (Chapter 8.5)",
+          "url": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/07 - Forward Dynamics of Open Chains (Chapter 8.5).mp4",
+          "vtt": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/07 - Forward Dynamics of Open Chains (Chapter 8.5).vtt",
+          "yt": "L8zpJOxDbh4",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 2 of 2)"
+        },
+        {
+          "label": "Dynamics in the Task Space (Chapter 8.6)",
+          "url": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/08 - Dynamics in the Task Space (Chapter 8.6).mp4",
+          "vtt": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/08 - Dynamics in the Task Space (Chapter 8.6).vtt",
+          "yt": "iQa01aFgf8U",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 2 of 2)"
+        },
+        {
+          "label": "Constrained Dynamics (Chapter 8.7)",
+          "url": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/09 - Constrained Dynamics (Chapter 8.7).mp4",
+          "vtt": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/09 - Constrained Dynamics (Chapter 8.7).vtt",
+          "yt": "E6Yp6DwJh24",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 2 of 2)"
+        },
+        {
+          "label": "Actuation, Gearing, and Friction (Chapter 8.9)",
+          "url": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/10 - Actuation, Gearing, and Friction (Chapter 8.9).mp4",
+          "vtt": "/coursera/course3/Week 2 - Chapter 8_  Dynamics of Open Chains (Part 2 of 2)/10 - Actuation, Gearing, and Friction (Chapter 8.9).vtt",
+          "yt": "w1kYLT3pETc",
+          "week": "Chapter 8_  Dynamics of Open Chains (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch09",
+      "n": 9,
+      "title": "Trajectory Generation",
+      "start": 347,
+      "end": 374,
+      "ex": 370,
+      "pdf": "/book/ch09.pdf",
+      "exPdf": "/book/ch09-ex.pdf",
+      "pages": 28,
+      "slides": [
+        {
+          "label": "Ch09.3 (annotated)",
+          "url": "/slides/Ch09/pdf/Ch09.3-edited.pdf"
+        },
+        {
+          "label": "Ch09.3",
+          "url": "/slides/Ch09/pdf/Ch09.3.pdf"
+        },
+        {
+          "label": "Ch09.4 (annotated)",
+          "url": "/slides/Ch09/pdf/Ch09.4-edited.pdf"
+        },
+        {
+          "label": "Ch09.4",
+          "url": "/slides/Ch09/pdf/Ch09.4.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Point-to-Point Trajectories (Chapter 9 through 9.2, Part 1 of 2)",
+          "url": "/coursera/course3/Week 3 - Chapter 9_  Trajectory Generation (Part 1 of 2)/11 - Point-to-Point Trajectories (Chapter 9 through 9.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course3/Week 3 - Chapter 9_  Trajectory Generation (Part 1 of 2)/11 - Point-to-Point Trajectories (Chapter 9 through 9.2, Part 1 of 2).vtt",
+          "yt": "1JRMqfEm79c",
+          "week": "Chapter 9_  Trajectory Generation (Part 1 of 2)"
+        },
+        {
+          "label": "Point-to-Point Trajectories (Chapter 9 through 9.2, Part 2 of 2)",
+          "url": "/coursera/course3/Week 3 - Chapter 9_  Trajectory Generation (Part 1 of 2)/12 - Point-to-Point Trajectories (Chapter 9 through 9.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course3/Week 3 - Chapter 9_  Trajectory Generation (Part 1 of 2)/12 - Point-to-Point Trajectories (Chapter 9 through 9.2, Part 2 of 2).vtt",
+          "yt": "1JRMqfEm79c",
+          "week": "Chapter 9_  Trajectory Generation (Part 1 of 2)"
+        },
+        {
+          "label": "Polynomial Via Point Trajectories (Chapter 9.3)",
+          "url": "/coursera/course3/Week 3 - Chapter 9_  Trajectory Generation (Part 1 of 2)/13 - Polynomial Via Point Trajectories (Chapter 9.3).mp4",
+          "vtt": "/coursera/course3/Week 3 - Chapter 9_  Trajectory Generation (Part 1 of 2)/13 - Polynomial Via Point Trajectories (Chapter 9.3).vtt",
+          "yt": "sWPpq9-5YOc",
+          "week": "Chapter 9_  Trajectory Generation (Part 1 of 2)"
+        },
+        {
+          "label": "Time-Optimal Time Scaling (Chapter 9.4, Part 1 of 3)",
+          "url": "/coursera/course3/Week 4 - Chapter 9_  Trajectory Generation (Part 2 of 2)/14 - Time-Optimal Time Scaling (Chapter 9.4, Part 1 of 3).mp4",
+          "vtt": "/coursera/course3/Week 4 - Chapter 9_  Trajectory Generation (Part 2 of 2)/14 - Time-Optimal Time Scaling (Chapter 9.4, Part 1 of 3).vtt",
+          "yt": "DRFA_iwH_HQ",
+          "week": "Chapter 9_  Trajectory Generation (Part 2 of 2)"
+        },
+        {
+          "label": "Time-Optimal Time Scaling (Chapter 9.4, Part 2 of 3)",
+          "url": "/coursera/course3/Week 4 - Chapter 9_  Trajectory Generation (Part 2 of 2)/15 - Time-Optimal Time Scaling (Chapter 9.4, Part 2 of 3).mp4",
+          "vtt": "/coursera/course3/Week 4 - Chapter 9_  Trajectory Generation (Part 2 of 2)/15 - Time-Optimal Time Scaling (Chapter 9.4, Part 2 of 3).vtt",
+          "yt": "DRFA_iwH_HQ",
+          "week": "Chapter 9_  Trajectory Generation (Part 2 of 2)"
+        },
+        {
+          "label": "Time-Optimal Time Scaling (Chapter 9.4, Part 3 of 3)",
+          "url": "/coursera/course3/Week 4 - Chapter 9_  Trajectory Generation (Part 2 of 2)/16 - Time-Optimal Time Scaling (Chapter 9.4, Part 3 of 3).mp4",
+          "vtt": "/coursera/course3/Week 4 - Chapter 9_  Trajectory Generation (Part 2 of 2)/16 - Time-Optimal Time Scaling (Chapter 9.4, Part 3 of 3).vtt",
+          "yt": "DRFA_iwH_HQ",
+          "week": "Chapter 9_  Trajectory Generation (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch10",
+      "n": 10,
+      "title": "Motion Planning",
+      "start": 375,
+      "end": 424,
+      "ex": 420,
+      "pdf": "/book/ch10.pdf",
+      "exPdf": "/book/ch10-ex.pdf",
+      "pages": 50,
+      "slides": [],
+      "videos": [
+        {
+          "label": "Overview of Motion Planning (Chapter 10.1)",
+          "url": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/01 - Overview of Motion Planning (Chapter 10.1).mp4",
+          "vtt": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/01 - Overview of Motion Planning (Chapter 10.1).vtt",
+          "yt": "aC4LQuB4Cic",
+          "week": "Chapter 10_  Motion Planning (Part 1 of 2)"
+        },
+        {
+          "label": "C-Space Obstacles (Chapter 10.2.1)",
+          "url": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/02 - C-Space Obstacles (Chapter 10.2.1).mp4",
+          "vtt": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/02 - C-Space Obstacles (Chapter 10.2.1).vtt",
+          "yt": "s2qrMwqm4D0",
+          "week": "Chapter 10_  Motion Planning (Part 1 of 2)"
+        },
+        {
+          "label": "Graphs and Trees (Chapter 10.2.3)",
+          "url": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/03 - Graphs and Trees (Chapter 10.2.3).mp4",
+          "vtt": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/03 - Graphs and Trees (Chapter 10.2.3).vtt",
+          "yt": "QpOuyqd6nnc",
+          "week": "Chapter 10_  Motion Planning (Part 1 of 2)"
+        },
+        {
+          "label": "Graph Search (Chapter 10.2.4)",
+          "url": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/04 - Graph Search (Chapter 10.2.4).mp4",
+          "vtt": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/04 - Graph Search (Chapter 10.2.4).vtt",
+          "yt": "ZI800-2jv38",
+          "week": "Chapter 10_  Motion Planning (Part 1 of 2)"
+        },
+        {
+          "label": "Complete Path Planners (Chapter 10.3)",
+          "url": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/05 - Complete Path Planners (Chapter 10.3).mp4",
+          "vtt": "/coursera/course4/Week 1 - Chapter 10_  Motion Planning (Part 1 of 2)/05 - Complete Path Planners (Chapter 10.3).vtt",
+          "yt": "SIHzI0jsLK0",
+          "week": "Chapter 10_  Motion Planning (Part 1 of 2)"
+        },
+        {
+          "label": "Grid Methods for Motion Planning (Chapter 10.4)",
+          "url": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/06 - Grid Methods for Motion Planning (Chapter 10.4).mp4",
+          "vtt": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/06 - Grid Methods for Motion Planning (Chapter 10.4).vtt",
+          "yt": "kCZAgL3jdxk",
+          "week": "Chapter 10_ Motion Planning (Part 2 of 2)"
+        },
+        {
+          "label": "Sampling Methods for Motion Planning (Chapter 10.5, Part 1 of 2)",
+          "url": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/07 - Sampling Methods for Motion Planning (Chapter 10.5, Part 1 of 2).mp4",
+          "vtt": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/07 - Sampling Methods for Motion Planning (Chapter 10.5, Part 1 of 2).vtt",
+          "yt": "rKe6HO8LDu0",
+          "week": "Chapter 10_ Motion Planning (Part 2 of 2)"
+        },
+        {
+          "label": "Sampling Methods for Motion Planning (Chapter 10.5, Part 2 of 2)",
+          "url": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/08 - Sampling Methods for Motion Planning (Chapter 10.5, Part 2 of 2).mp4",
+          "vtt": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/08 - Sampling Methods for Motion Planning (Chapter 10.5, Part 2 of 2).vtt",
+          "yt": "rKe6HO8LDu0",
+          "week": "Chapter 10_ Motion Planning (Part 2 of 2)"
+        },
+        {
+          "label": "Virtual Potential Fields (Chapter 10.6)",
+          "url": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/09 - Virtual Potential Fields (Chapter 10.6).mp4",
+          "vtt": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/09 - Virtual Potential Fields (Chapter 10.6).vtt",
+          "yt": "8Vva0bnMIEI",
+          "week": "Chapter 10_ Motion Planning (Part 2 of 2)"
+        },
+        {
+          "label": "Nonlinear Optimization (Chapter 10.7)",
+          "url": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/10 - Nonlinear Optimization (Chapter 10.7).mp4",
+          "vtt": "/coursera/course4/Week 2 - Chapter 10_ Motion Planning (Part 2 of 2)/10 - Nonlinear Optimization (Chapter 10.7).vtt",
+          "yt": "-z6Rlei8iPE",
+          "week": "Chapter 10_ Motion Planning (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch11",
+      "n": 11,
+      "title": "Robot Control",
+      "start": 425,
+      "end": 482,
+      "ex": 475,
+      "pdf": "/book/ch11.pdf",
+      "exPdf": "/book/ch11-ex.pdf",
+      "pages": 58,
+      "slides": [
+        {
+          "label": "Ch11.2a (annotated)",
+          "url": "/slides/Ch11/pdf/Ch11.2a-edited.pdf"
+        },
+        {
+          "label": "Ch11.2a",
+          "url": "/slides/Ch11/pdf/Ch11.2a.pdf"
+        },
+        {
+          "label": "Ch11.2b (annotated)",
+          "url": "/slides/Ch11/pdf/Ch11.2b-edited.pdf"
+        },
+        {
+          "label": "Ch11.2b",
+          "url": "/slides/Ch11/pdf/Ch11.2b.pdf"
+        },
+        {
+          "label": "Ch11.3 (annotated)",
+          "url": "/slides/Ch11/pdf/Ch11.3-edited.pdf"
+        },
+        {
+          "label": "Ch11.3",
+          "url": "/slides/Ch11/pdf/Ch11.3.pdf"
+        },
+        {
+          "label": "Ch11.4 (annotated)",
+          "url": "/slides/Ch11/pdf/Ch11.4-edited.pdf"
+        },
+        {
+          "label": "Ch11.4",
+          "url": "/slides/Ch11/pdf/Ch11.4.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Control System Overview (Chapter 11.1)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/11 - Control System Overview (Chapter 11.1).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/11 - Control System Overview (Chapter 11.1).vtt",
+          "yt": "mGuDXlZEoSc",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Error Response (Chapter 11.2.1)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/12 - Error Response (Chapter 11.2.1).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/12 - Error Response (Chapter 11.2.1).vtt",
+          "yt": "ddkUszFVTUk",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Linear Error Dynamics (Chapter 11.2.2)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/13 - Linear Error Dynamics (Chapter 11.2.2).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/13 - Linear Error Dynamics (Chapter 11.2.2).vtt",
+          "yt": "1TY4tpSnjBg",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "First-Order Error Dynamics (Chapter 11.2.2.1)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/14 - First-Order Error Dynamics (Chapter 11.2.2.1).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/14 - First-Order Error Dynamics (Chapter 11.2.2.1).vtt",
+          "yt": "MfhHENvUnhg",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Second-Order Error Dynamics (Chapter 11.2.2.2)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/15 - Second-Order Error Dynamics (Chapter 11.2.2.2).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/15 - Second-Order Error Dynamics (Chapter 11.2.2.2).vtt",
+          "yt": "4zOGHJWuxlg",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Motion Control with Velocity Inputs (Chapter 11.3, Part 1 of 3)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/16 - Motion Control with Velocity Inputs (Chapter 11.3, Part 1 of 3).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/16 - Motion Control with Velocity Inputs (Chapter 11.3, Part 1 of 3).vtt",
+          "yt": "QFCbTVJqm8I",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Motion Control with Velocity Inputs (Chapter 11.3, Part 2 of 3)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/17 - Motion Control with Velocity Inputs (Chapter 11.3, Part 2 of 3).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/17 - Motion Control with Velocity Inputs (Chapter 11.3, Part 2 of 3).vtt",
+          "yt": "QFCbTVJqm8I",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Motion Control with Velocity Inputs (Chapter 11.3, Part 3 of 3)",
+          "url": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/18 - Motion Control with Velocity Inputs (Chapter 11.3, Part 3 of 3).mp4",
+          "vtt": "/coursera/course4/Week 3 - Chapter 11_ Robot Control (Part 1 of 2)/18 - Motion Control with Velocity Inputs (Chapter 11.3, Part 3 of 3).vtt",
+          "yt": "QFCbTVJqm8I",
+          "week": "Chapter 11_ Robot Control (Part 1 of 2)"
+        },
+        {
+          "label": "Motion Control with Torque or Force Inputs (Chapter 11.4, Part 1 of 3)",
+          "url": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/19 - Motion Control with Torque or Force Inputs (Chapter 11.4, Part 1 of 3).mp4",
+          "vtt": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/19 - Motion Control with Torque or Force Inputs (Chapter 11.4, Part 1 of 3).vtt",
+          "yt": "HAVBtupm8zM",
+          "week": "Chapter 11_  Robot Control (Part 2 of 2)"
+        },
+        {
+          "label": "Motion Control with Torque or Force Inputs (Chapter 11.4, Part 2 of 3)",
+          "url": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/20 - Motion Control with Torque or Force Inputs (Chapter 11.4, Part 2 of 3).mp4",
+          "vtt": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/20 - Motion Control with Torque or Force Inputs (Chapter 11.4, Part 2 of 3).vtt",
+          "yt": "HAVBtupm8zM",
+          "week": "Chapter 11_  Robot Control (Part 2 of 2)"
+        },
+        {
+          "label": "Motion Control with Torque or Force Inputs (Chapter 11.4, Part 3 of 3)",
+          "url": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/21 - Motion Control with Torque or Force Inputs (Chapter 11.4, Part 3 of 3).mp4",
+          "vtt": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/21 - Motion Control with Torque or Force Inputs (Chapter 11.4, Part 3 of 3).vtt",
+          "yt": "HAVBtupm8zM",
+          "week": "Chapter 11_  Robot Control (Part 2 of 2)"
+        },
+        {
+          "label": "Force Control (Chapter 11.5)",
+          "url": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/22 - Force Control (Chapter 11.5).mp4",
+          "vtt": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/22 - Force Control (Chapter 11.5).vtt",
+          "yt": "M1U629sREiY",
+          "week": "Chapter 11_  Robot Control (Part 2 of 2)"
+        },
+        {
+          "label": "Hybrid Motion-Force Control (Chapter 11.6)",
+          "url": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/23 - Hybrid Motion-Force Control (Chapter 11.6).mp4",
+          "vtt": "/coursera/course4/Week 4 - Chapter 11_  Robot Control (Part 2 of 2)/23 - Hybrid Motion-Force Control (Chapter 11.6).vtt",
+          "yt": "UR0GpaaBVKk",
+          "week": "Chapter 11_  Robot Control (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch12",
+      "n": 12,
+      "title": "Grasping and Manipulation",
+      "start": 483,
+      "end": 534,
+      "ex": 526,
+      "pdf": "/book/ch12.pdf",
+      "exPdf": "/book/ch12-ex.pdf",
+      "pages": 52,
+      "slides": [],
+      "videos": [
+        {
+          "label": "Grasping and Manipulation (Chapter 12)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/01 - Grasping and Manipulation (Chapter 12).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/01 - Grasping and Manipulation (Chapter 12).vtt",
+          "yt": "jAhpRolF-zg",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "First-Order Analysis of a Single Contact (Chapter 12.1.1)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/02 - First-Order Analysis of a Single Contact (Chapter 12.1.1).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/02 - First-Order Analysis of a Single Contact (Chapter 12.1.1).vtt",
+          "yt": "EfBwUbCP5nk",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "Contact Types_  Rolling, Sliding, and Breaking (Chapter 12.1.2)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/03 - Contact Types_  Rolling, Sliding, and Breaking (Chapter 12.1.2).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/03 - Contact Types_  Rolling, Sliding, and Breaking (Chapter 12.1.2).vtt",
+          "yt": "k26cAEmTSNQ",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "Multiple Contacts (Chapter 12.1.3)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/04 - Multiple Contacts (Chapter 12.1.3).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/04 - Multiple Contacts (Chapter 12.1.3).vtt",
+          "yt": "aZaAOvmzkmw",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "Planar Graphical Methods (Chapter 12.1.6, Part 1 of 2)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/05 - Planar Graphical Methods (Chapter 12.1.6, Part 1 of 2).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/05 - Planar Graphical Methods (Chapter 12.1.6, Part 1 of 2).vtt",
+          "yt": "Pfi5yRsytc8",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "Planar Graphical Methods (Chapter 12.1.6, Part 2 of 2)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/06 - Planar Graphical Methods (Chapter 12.1.6, Part 2 of 2).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/06 - Planar Graphical Methods (Chapter 12.1.6, Part 2 of 2).vtt",
+          "yt": "Pfi5yRsytc8",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "Form Closure (Chapter 12.1.7)",
+          "url": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/07 - Form Closure (Chapter 12.1.7).mp4",
+          "vtt": "/coursera/course5/Week 1 - Chapter 12_  Grasping and Manipulation (Part 1 of 2)/07 - Form Closure (Chapter 12.1.7).vtt",
+          "yt": "GjAtNb3VDZQ",
+          "week": "Chapter 12_  Grasping and Manipulation (Part 1 of 2)"
+        },
+        {
+          "label": "Friction (Chapter 12.2.1)",
+          "url": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/08 - Friction (Chapter 12.2.1).mp4",
+          "vtt": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/08 - Friction (Chapter 12.2.1).vtt",
+          "yt": "FY92f7gssWc",
+          "week": "Chapter 12_ Grasping and Manipulation (Part 2 of 2)"
+        },
+        {
+          "label": "Planar Graphical Methods (Chapter 12.2.2)",
+          "url": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/09 - Planar Graphical Methods (Chapter 12.2.2).mp4",
+          "vtt": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/09 - Planar Graphical Methods (Chapter 12.2.2).vtt",
+          "yt": "Qa74jWgtlnQ",
+          "week": "Chapter 12_ Grasping and Manipulation (Part 2 of 2)"
+        },
+        {
+          "label": "Force Closure (Chapter 12.2.3)",
+          "url": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/10 - Force Closure (Chapter 12.2.3).mp4",
+          "vtt": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/10 - Force Closure (Chapter 12.2.3).vtt",
+          "yt": "6RWFFMtD5k8",
+          "week": "Chapter 12_ Grasping and Manipulation (Part 2 of 2)"
+        },
+        {
+          "label": "Duality of Force and Motion Freedoms (Chapter 12.2.4)",
+          "url": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/11 - Duality of Force and Motion Freedoms (Chapter 12.2.4).mp4",
+          "vtt": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/11 - Duality of Force and Motion Freedoms (Chapter 12.2.4).vtt",
+          "yt": "PPl0yuFJCVM",
+          "week": "Chapter 12_ Grasping and Manipulation (Part 2 of 2)"
+        },
+        {
+          "label": "Manipulation and the Meter-Stick Trick (Chapter 12.3)",
+          "url": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/12 - Manipulation and the Meter-Stick Trick (Chapter 12.3).mp4",
+          "vtt": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/12 - Manipulation and the Meter-Stick Trick (Chapter 12.3).vtt",
+          "yt": "luyzvBT_Ykc",
+          "week": "Chapter 12_ Grasping and Manipulation (Part 2 of 2)"
+        },
+        {
+          "label": "Transport of an Assembly (Chapter 12.3)",
+          "url": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/13 - Transport of an Assembly (Chapter 12.3).mp4",
+          "vtt": "/coursera/course5/Week 2 - Chapter 12_ Grasping and Manipulation (Part 2 of 2)/13 - Transport of an Assembly (Chapter 12.3).vtt",
+          "yt": "Ad5dbYVuaPM",
+          "week": "Chapter 12_ Grasping and Manipulation (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "ch13",
+      "n": 13,
+      "title": "Wheeled Mobile Robots",
+      "start": 535,
+      "end": 586,
+      "ex": 577,
+      "pdf": "/book/ch13.pdf",
+      "exPdf": "/book/ch13-ex.pdf",
+      "pages": 52,
+      "slides": [
+        {
+          "label": "Ch13.2 (annotated)",
+          "url": "/slides/Ch13/pdf/Ch13.2-edited.pdf"
+        },
+        {
+          "label": "Ch13.2",
+          "url": "/slides/Ch13/pdf/Ch13.2.pdf"
+        },
+        {
+          "label": "Ch13.4 (annotated)",
+          "url": "/slides/Ch13/pdf/Ch13.4-edited.pdf"
+        },
+        {
+          "label": "Ch13.4",
+          "url": "/slides/Ch13/pdf/Ch13.4.pdf"
+        },
+        {
+          "label": "Ch13.5 (annotated)",
+          "url": "/slides/Ch13/pdf/Ch13.5-edited.pdf"
+        },
+        {
+          "label": "Ch13.5",
+          "url": "/slides/Ch13/pdf/Ch13.5.pdf"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Wheeled Mobile Robots (Chapter 13.1)",
+          "url": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/14 - Wheeled Mobile Robots (Chapter 13.1).mp4",
+          "vtt": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/14 - Wheeled Mobile Robots (Chapter 13.1).vtt",
+          "yt": "NYO2X3eJ_Ro",
+          "week": "Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)"
+        },
+        {
+          "label": "Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 1 of 2)",
+          "url": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/15 - Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/15 - Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 1 of 2).vtt",
+          "yt": "NcOT9hOsceE",
+          "week": "Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)"
+        },
+        {
+          "label": "Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 2 of 2)",
+          "url": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/16 - Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/16 - Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 2 of 2).vtt",
+          "yt": "NcOT9hOsceE",
+          "week": "Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)"
+        },
+        {
+          "label": "Modeling of Nonholonomic Wheeled Mobile Robots (Chapter 13.3.1)",
+          "url": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/17 - Modeling of Nonholonomic Wheeled Mobile Robots (Chapter 13.3.1).mp4",
+          "vtt": "/coursera/course5/Week 3 - Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)/17 - Modeling of Nonholonomic Wheeled Mobile Robots (Chapter 13.3.1).vtt",
+          "yt": "fPHVhlRFFCk",
+          "week": "Chapter 13_ Wheeled Mobile Robots (Part 1 of 2)"
+        },
+        {
+          "label": "Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 1 of 4)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/18 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 1 of 4).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/18 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 1 of 4).vtt",
+          "yt": "hTEZ98hozSM",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 2 of 4)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/19 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 2 of 4).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/19 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 2 of 4).vtt",
+          "yt": "hTEZ98hozSM",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 3 of 4)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/20 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 3 of 4).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/20 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 3 of 4).vtt",
+          "yt": "hTEZ98hozSM",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 4 of 4)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/21 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 4 of 4).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/21 - Controllability of Wheeled Mobile Robots (Chapter 13.3.2, Part 4 of 4).vtt",
+          "yt": "hTEZ98hozSM",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Motion Planning for Nonholonomic Mobile Robots (Chapter 13.3.3)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/22 - Motion Planning for Nonholonomic Mobile Robots (Chapter 13.3.3).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/22 - Motion Planning for Nonholonomic Mobile Robots (Chapter 13.3.3).vtt",
+          "yt": "jOesC0wKpTQ",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Feedback Control for Nonholonomic Mobile Robots (Chapter 13.3.4)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/23 - Feedback Control for Nonholonomic Mobile Robots (Chapter 13.3.4).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/23 - Feedback Control for Nonholonomic Mobile Robots (Chapter 13.3.4).vtt",
+          "yt": "STF1Ubf3moU",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Odometry (Chapter 13.4)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/24 - Odometry (Chapter 13.4).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/24 - Odometry (Chapter 13.4).vtt",
+          "yt": "eQ9E0Zvp9jw",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        },
+        {
+          "label": "Mobile Manipulation (Chapter 13.5)",
+          "url": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/25 - Mobile Manipulation (Chapter 13.5).mp4",
+          "vtt": "/coursera/course5/Week 4 - Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)/25 - Mobile Manipulation (Chapter 13.5).vtt",
+          "yt": "1MgpqD7v2x0",
+          "week": "Chapter 13_  Wheeled Mobile Robots (Part 2 of 2)"
+        }
+      ]
+    },
+    {
+      "id": "capstone",
+      "n": 14,
+      "title": "Capstone Project",
+      "start": null,
+      "end": null,
+      "ex": null,
+      "pdf": null,
+      "exPdf": null,
+      "pages": 0,
+      "slides": [],
+      "videos": [
+        {
+          "label": "Introduction to the Capstone Project_  Mobile Manipulation",
+          "url": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/01 - Introduction to the Capstone Project_  Mobile Manipulation.mp4",
+          "vtt": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/01 - Introduction to the Capstone Project_  Mobile Manipulation.vtt",
+          "yt": "1MgpqD7v2x0",
+          "week": "Introduction to the Capstone Project, and Milestone 1"
+        },
+        {
+          "label": "Video Summary of the Capstone Project",
+          "url": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/02 - Video Summary of the Capstone Project.mp4",
+          "vtt": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/02 - Video Summary of the Capstone Project.vtt",
+          "yt": null,
+          "week": "Introduction to the Capstone Project, and Milestone 1"
+        },
+        {
+          "label": "(Optional Review) Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 1 of 2)",
+          "url": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/03 - (Optional Review) Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/03 - (Optional Review) Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 1 of 2).vtt",
+          "yt": "NcOT9hOsceE",
+          "week": "Introduction to the Capstone Project, and Milestone 1"
+        },
+        {
+          "label": "(Optional Review) Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 2 of 2)",
+          "url": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/04 - (Optional Review) Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 2 of 2).mp4",
+          "vtt": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/04 - (Optional Review) Omnidirectional Wheeled Mobile Robots (Chapter 13.2, Part 2 of 2).vtt",
+          "yt": "NcOT9hOsceE",
+          "week": "Introduction to the Capstone Project, and Milestone 1"
+        },
+        {
+          "label": "(Optional Review) Odometry (Chapter 13.4)",
+          "url": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/05 - (Optional Review) Odometry (Chapter 13.4).mp4",
+          "vtt": "/coursera/course6/Week 1 - Introduction to the Capstone Project, and Milestone 1/05 - (Optional Review) Odometry (Chapter 13.4).vtt",
+          "yt": "eQ9E0Zvp9jw",
+          "week": "Introduction to the Capstone Project, and Milestone 1"
+        },
+        {
+          "label": "Milestone 2_  Reference Trajectory Generation",
+          "url": "/coursera/course6/Week 2 - Milestone 2_  Reference Trajectory Generation/06 - Milestone 2_  Reference Trajectory Generation.mp4",
+          "vtt": "/coursera/course6/Week 2 - Milestone 2_  Reference Trajectory Generation/06 - Milestone 2_  Reference Trajectory Generation.vtt",
+          "yt": null,
+          "week": "Milestone 2_  Reference Trajectory Generation"
+        },
+        {
+          "label": "(Optional Review) Point-to-Point Trajectories (Chapters 9.1 and 9.2, Part 1 of 2)",
+          "url": "/coursera/course6/Week 2 - Milestone 2_  Reference Trajectory Generation/07 - (Optional Review) Point-to-Point Trajectories (Chapters 9.1 and 9.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course6/Week 2 - Milestone 2_  Reference Trajectory Generation/07 - (Optional Review) Point-to-Point Trajectories (Chapters 9.1 and 9.2, Part 1 of 2).vtt",
+          "yt": "1JRMqfEm79c",
+          "week": "Milestone 2_  Reference Trajectory Generation"
+        },
+        {
+          "label": "(Optional Review) Point-to-Point Trajectories (Chapters 9.1 and 9.2, Part 1 of 2)",
+          "url": "/coursera/course6/Week 2 - Milestone 2_  Reference Trajectory Generation/08 - (Optional Review) Point-to-Point Trajectories (Chapters 9.1 and 9.2, Part 1 of 2).mp4",
+          "vtt": "/coursera/course6/Week 2 - Milestone 2_  Reference Trajectory Generation/08 - (Optional Review) Point-to-Point Trajectories (Chapters 9.1 and 9.2, Part 1 of 2).vtt",
+          "yt": "1JRMqfEm79c",
+          "week": "Milestone 2_  Reference Trajectory Generation"
+        },
+        {
+          "label": "(Optional Review) Product of Exponentials Formula in the End-Effector Frame (Chapter 4.1.2)",
+          "url": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/09 - (Optional Review) Product of Exponentials Formula in the End-Effector Frame (Chapter 4.1.2).mp4",
+          "vtt": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/09 - (Optional Review) Product of Exponentials Formula in the End-Effector Frame (Chapter 4.1.2).vtt",
+          "yt": "27jUrkFdyks",
+          "week": "Milestone 3_  Feedforward Control"
+        },
+        {
+          "label": "(Optional Review) Body Jacobian (Chapter 5.1.2)",
+          "url": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/10 - (Optional Review) Body Jacobian (Chapter 5.1.2).mp4",
+          "vtt": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/10 - (Optional Review) Body Jacobian (Chapter 5.1.2).vtt",
+          "yt": "69HeL2XvL9Y",
+          "week": "Milestone 3_  Feedforward Control"
+        },
+        {
+          "label": "(Optional Review) Motion Control with Velocity Inputs (Chapter 11.3, Part 3 of 3)",
+          "url": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/11 - (Optional Review) Motion Control with Velocity Inputs (Chapter 11.3, Part 3 of 3).mp4",
+          "vtt": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/11 - (Optional Review) Motion Control with Velocity Inputs (Chapter 11.3, Part 3 of 3).vtt",
+          "yt": "QFCbTVJqm8I",
+          "week": "Milestone 3_  Feedforward Control"
+        },
+        {
+          "label": "(Optional Review) Mobile Manipulation (Chapter 13.5)",
+          "url": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/12 - (Optional Review) Mobile Manipulation (Chapter 13.5).mp4",
+          "vtt": "/coursera/course6/Week 3 - Milestone 3_  Feedforward Control/12 - (Optional Review) Mobile Manipulation (Chapter 13.5).vtt",
+          "yt": "1MgpqD7v2x0",
+          "week": "Milestone 3_  Feedforward Control"
+        }
+      ]
+    }
+  ]
+}
