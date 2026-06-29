@@ -4,6 +4,7 @@
 
 <script>
   import { store, persist } from '../stores/store.svelte.js';
+  import { asset } from '../asset.js';
 
   let { chapter } = $props();
   const vids = chapter.videos;
@@ -21,7 +22,7 @@
   $effect(() => {
     if (probedLocal || ytMode || !current?.url || !anyYt) return;
     probedLocal = true;
-    fetch(encodeURI(current.url), { method: 'HEAD' })
+    fetch(encodeURI(asset(current.url)), { method: 'HEAD' })
       .then(r => { if (!r.ok) setSource('youtube'); })
       .catch(() => setSource('youtube'));
   });
@@ -112,14 +113,14 @@
         {#key current.url}
           <video
             bind:this={videoEl}
-            src={encodeURI(current.url)}
+            src={encodeURI(asset(current.url))}
             controls
             onloadedmetadata={onLoaded}
             ontimeupdate={onTime}
             onended={onEnded}
           >
             {#if current.vtt}
-              <track kind="subtitles" src={encodeURI(current.vtt)} srclang="en" label="English" default />
+              <track kind="subtitles" src={encodeURI(asset(current.vtt))} srclang="en" label="English" default />
             {/if}
           </video>
         {/key}

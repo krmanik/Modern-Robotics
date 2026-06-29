@@ -1,5 +1,6 @@
 <script>
   import { loadPdf, pdfjsLib } from '../pdf.js';
+  import { asset } from '../asset.js';
 
   let {
     url,
@@ -37,7 +38,7 @@
 
   // ---- load + layout ---------------------------------------------------------
   $effect(() => {
-    const u = url;
+    const u = asset(url);
     errored = false; doc = null; numPages = 0;
     rendered.clear();
     if (!u) { loading = false; return; }

@@ -46,11 +46,13 @@ function serveCoursera() {
   };
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // "/" for the dev server; the GitHub Pages project subpath for the build.
+  base: command === 'build' ? '/Modern-Robotics/' : '/',
   plugins: [svelte(), serveCoursera()],
   worker: { format: 'es' },
   optimizeDeps: { exclude: ['pdfjs-dist'] },
   // book PDFs + compressed slides live in public/ and are committed; the large
   // video library is served by the plugin above only when present locally.
   build: { copyPublicDir: true },
-});
+}));
