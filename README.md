@@ -10,9 +10,27 @@ The web app (in [`dashboard/`](dashboard/)) is built with **Svelte 5 + Vite** an
 runs entirely in the browser. All progress is stored locally and can be exported.
 
 The textbook, the per-chapter/exercise PDFs, and the compressed lecture slides are
-committed to this repo (~75 MB), so the app works as soon as you clone it. The video
-library is not bundled — lectures stream from YouTube by default, and you can
-optionally download them for fully local playback.
+committed to this repo, so the app works as soon as you clone it. The video library
+is not bundled — lectures stream from YouTube by default, and you can optionally
+download them for fully local playback.
+
+---
+
+## Quick start
+
+**Live demo:** https://krmanik.github.io/Modern-Robotics/ — runs in the browser, videos stream from YouTube. Nothing to install.
+
+Run it locally:
+
+```bash
+git clone https://github.com/krmanik/Modern-Robotics
+cd Modern-Robotics/dashboard
+npm install
+npm run dev        # open the printed http://localhost:5173
+```
+
+That's it. The book, exercises and slides are already in place, and videos stream
+from YouTube. No accounts, downloads, or API keys required.
 
 ---
 
@@ -31,20 +49,6 @@ Per-chapter **progress** combines reading, exercises, videos watched, and
 challenges solved. Each chapter can be **marked complete** or **reset** from the
 `⋯` menu. Everything persists in `localStorage`; use **Export / Import** in the
 sidebar to back it up or move it between machines.
-
----
-
-## Quick start
-
-```bash
-git clone <this-repo>
-cd modern-robotics/dashboard
-npm install
-npm run dev        # open the printed http://localhost:5173
-```
-
-That's it. The book, exercises and slides are already in place, and videos stream
-from YouTube. No accounts, downloads, or API keys required.
 
 ---
 
@@ -134,10 +138,10 @@ serves `coursera/` directly (with range requests) if you've downloaded it.
 
 ## Hosting (GitHub Pages, etc.)
 
-`npm run build` produces a static bundle in `dashboard/dist/` (~70 MB, app + book +
-slides; videos excluded). With the Videos tab on YouTube it's a complete, hostable
-site. To trim further, you can drop `public/slides` from the deploy if you only
-need the reader.
+`npm run build` produces a static bundle in `dashboard/dist/` (app + book + slides;
+videos excluded). With the Videos tab on YouTube it's a complete, hostable site. To
+trim further, you can drop `public/slides` from the deploy if you only need the
+reader.
 
 ---
 
