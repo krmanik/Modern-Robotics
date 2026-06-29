@@ -1,0 +1,16 @@
+# login credentials — never commit
+cookies.txt
+*.cookies.json
+
+# the video library is large; not committed (use YouTube mode, or download it).
+# served in dev by dashboard/vite.config.js when present.
+/coursera
+
+# raw slide sources (incl. .pptx). The compressed, served copies in
+# dashboard/public/slides/ ARE committed.
+/slides
+
+# build + deps
+dist
+node_modules
+.DS_Store
