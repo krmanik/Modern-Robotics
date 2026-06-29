@@ -17,7 +17,7 @@
   let running = $state(false);
   let status = $state('');
   let consoleTab = $state('tests');  // tests | solution
-  let listOpen = $state(false);
+  let listOpen = $state(true);
   let split = $state(44);            // % width of description panel
 
   let dark = $state(typeof matchMedia !== 'undefined' && matchMedia('(prefers-color-scheme: dark)').matches);
@@ -41,7 +41,8 @@
     });
   });
 
-  function pick(i) { sel = i; listOpen = false; }
+  // pick a problem; on narrow screens the list is an overlay, so close it
+  function pick(i) { sel = i; if (typeof window !== 'undefined' && window.innerWidth <= 860) listOpen = false; }
   function prev() { if (sel > 0) sel--; }
   function next() { if (sel < list.length - 1) sel++; }
 
@@ -250,9 +251,9 @@
   .cstate { padding: 8px 2px; }
   .solcode { font-family: var(--mono); font-size: 12.5px; white-space: pre-wrap; margin: 0; }
 
-  /* problem list drawer */
-  .backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.25); z-index: 9; }
-  .drawer { position: absolute; left: 0; top: 0; bottom: 0; width: 300px; max-width: 85%; background: var(--surface); border-right: 1px solid var(--border); z-index: 10; overflow-y: auto; box-shadow: var(--shadow); }
+  /* problem list — docked sidebar on desktop, overlay drawer on mobile */
+  .backdrop { display: none; }
+  .drawer { position: relative; flex: none; width: 260px; background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; }
   .drawer-h { padding: 14px 16px 8px; font-weight: 650; font-size: 13px; }
   .di { width: 100%; display: flex; align-items: center; gap: 10px; text-align: left; border: none; background: transparent; padding: 9px 14px; color: var(--text); }
   .di:hover { background: var(--surface-2); } .di.active { background: var(--accent-soft); }
@@ -263,6 +264,8 @@
 
   @media (max-width: 860px) {
     .body { flex-direction: column; }
+    .backdrop { display: block; position: absolute; inset: 0; background: rgba(0,0,0,.25); z-index: 9; }
+    .drawer { position: absolute; left: 0; top: 0; bottom: 0; width: 300px; max-width: 85%; z-index: 10; box-shadow: var(--shadow); }
     .desc { flex-basis: auto !important; max-height: 38%; border-bottom: 1px solid var(--border); }
     .resizer { display: none; }
     .ide { border-left: none; }
