@@ -1,0 +1,2706 @@
+{
+  "ch02": [
+    {
+      "id": "ch02-grubler",
+      "title": "Degrees of Freedom (Gr\u00fcbler)",
+      "difficulty": "Easy",
+      "func": "grubler",
+      "tags": [
+        "mobility"
+      ],
+      "prompt": "Gr\u00fcbler's formula gives the DOF of a mechanism:\n\n    dof = m\u00b7(N \u2212 1 \u2212 J) + \u03a3 f\u1d62\n\nm is the DOF of one rigid body (3 planar, 6 spatial), N is the number of links *including ground*, J the number of joints, and `fs` lists each joint's freedoms.\n\nImplement `grubler(m, N, J, fs)`.",
+      "starter": "def grubler(m, N, J, fs):\n    pass\n",
+      "solution": "def grubler(m, N, J, fs):\n    return m * (N - 1 - J) + sum(fs)\n",
+      "tests": [
+        {
+          "args": [
+            3,
+            4,
+            4,
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            6,
+            4,
+            3,
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": 3
+        },
+        {
+          "args": [
+            3,
+            5,
+            5,
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": 2
+        },
+        {
+          "args": [
+            6,
+            8,
+            9,
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": -3
+        }
+      ]
+    },
+    {
+      "id": "ch02-spatial-chain",
+      "title": "Spatial Open-Chain DOF",
+      "difficulty": "Easy",
+      "func": "grubler",
+      "tags": [
+        "mobility"
+      ],
+      "prompt": "An open chain of N links (incl. ground) joined by N\u22121 single-DOF revolute joints in space (m=6) has exactly N\u22121 DOF. Use the same `grubler(m, N, J, fs)` to confirm it.",
+      "starter": "def grubler(m, N, J, fs):\n    pass\n",
+      "solution": "def grubler(m, N, J, fs):\n    return m * (N - 1 - J) + sum(fs)\n",
+      "tests": [
+        {
+          "args": [
+            6,
+            7,
+            6,
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": 6
+        },
+        {
+          "args": [
+            6,
+            3,
+            2,
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "id": "ch02-redundancy",
+      "title": "Degree of Redundancy",
+      "difficulty": "Easy",
+      "func": "redundancy",
+      "tags": [
+        "workspace"
+      ],
+      "prompt": "A robot with `dof` joints performing a task that needs `task` dimensions has redundancy = dof \u2212 task (when positive, infinitely many joint solutions reach a goal).\n\nImplement `redundancy(dof, task)`.",
+      "starter": "def redundancy(dof, task):\n    pass\n",
+      "solution": "def redundancy(dof, task):\n    return dof - task\n",
+      "tests": [
+        {
+          "args": [
+            7,
+            6
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            6,
+            6
+          ],
+          "expected": 0
+        },
+        {
+          "args": [
+            4,
+            3
+          ],
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "id": "ch02-freebodies",
+      "title": "DOF of Free Rigid Bodies",
+      "difficulty": "Easy",
+      "func": "free_bodies_dof",
+      "tags": [
+        "cspace"
+      ],
+      "prompt": "n unconstrained rigid bodies each have m DOF, so together m\u00b7n. Implement `free_bodies_dof(m, n)`.",
+      "starter": "def free_bodies_dof(m, n):\n    pass\n",
+      "solution": "def free_bodies_dof(m, n):\n    return m * n\n",
+      "tests": [
+        {
+          "args": [
+            6,
+            1
+          ],
+          "expected": 6
+        },
+        {
+          "args": [
+            3,
+            4
+          ],
+          "expected": 12
+        },
+        {
+          "args": [
+            6,
+            5
+          ],
+          "expected": 30
+        }
+      ]
+    }
+  ],
+  "ch03": [
+    {
+      "id": "ch03-skew",
+      "title": "Skew-Symmetric Matrix [\u03c9]",
+      "difficulty": "Easy",
+      "func": "vec_to_so3",
+      "tags": [
+        "so3"
+      ],
+      "prompt": "Map \u03c9 = (\u03c9\u2081,\u03c9\u2082,\u03c9\u2083) to [\u03c9] \u2208 so(3):\n\n    [\u03c9] = [[0,\u2212\u03c9\u2083,\u03c9\u2082],[\u03c9\u2083,0,\u2212\u03c9\u2081],[\u2212\u03c9\u2082,\u03c9\u2081,0]]\n\nImplement `vec_to_so3(w)`.",
+      "starter": "def vec_to_so3(w):\n    pass\n",
+      "solution": "def vec_to_so3(w):\n    return [[0,-w[2],w[1]],\n            [w[2],0,-w[0]],\n            [-w[1],w[0],0]]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              -3,
+              2
+            ],
+            [
+              3,
+              0,
+              -1
+            ],
+            [
+              -2,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              -2,
+              5,
+              0
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              -5,
+              -2,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-unskew",
+      "title": "Vector from [\u03c9] (so3\u2192vec)",
+      "difficulty": "Easy",
+      "func": "so3_to_vec",
+      "tags": [
+        "so3"
+      ],
+      "prompt": "Recover \u03c9 from a skew-symmetric matrix: \u03c9 = (M\u2082\u2081, M\u2080\u2082, M\u2081\u2080).\n\nImplement `so3_to_vec(M)` (3\u00d73 list \u2192 3-vector).",
+      "starter": "def so3_to_vec(M):\n    pass\n",
+      "solution": "def so3_to_vec(M):\n    return [M[2][1], M[0][2], M[1][0]]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                0,
+                -3,
+                2
+              ],
+              [
+                3,
+                0,
+                -1
+              ],
+              [
+                -2,
+                1,
+                0
+              ]
+            ]
+          ],
+          "expected": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ]
+          ],
+          "expected": [
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-rotinv",
+      "title": "Inverse of a Rotation Matrix",
+      "difficulty": "Easy",
+      "func": "rot_inv",
+      "tags": [
+        "so3"
+      ],
+      "prompt": "For R \u2208 SO(3), R\u207b\u00b9 = R\u1d40. Implement `rot_inv(R)` returning the transpose of the 3\u00d73 matrix.",
+      "starter": "def rot_inv(R):\n    pass\n",
+      "solution": "def rot_inv(R):\n    return [[R[j][i] for j in range(3)] for i in range(3)]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-rot2",
+      "title": "Planar Rotation Matrix",
+      "difficulty": "Easy",
+      "func": "rot2",
+      "tags": [
+        "so3"
+      ],
+      "prompt": "The 2\u00d72 rotation by angle \u03b8 is [[cos\u03b8,\u2212sin\u03b8],[sin\u03b8,cos\u03b8]].\n\nImplement `rot2(t)`.",
+      "starter": "import math\n\ndef rot2(t):\n    pass\n",
+      "solution": "import math\n\ndef rot2(t):\n    c, s = math.cos(t), math.sin(t)\n    return [[c, -s], [s, c]]\n",
+      "tests": [
+        {
+          "args": [
+            0
+          ],
+          "expected": [
+            [
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "args": [
+            1.5707963267948966
+          ],
+          "expected": [
+            [
+              0.0,
+              -1.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "args": [
+            3.141592653589793
+          ],
+          "expected": [
+            [
+              -1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              -1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-rotz",
+      "title": "Rotation about \u1e91 (Rz)",
+      "difficulty": "Easy",
+      "func": "rotz",
+      "tags": [
+        "so3"
+      ],
+      "prompt": "Rz(\u03b8) = [[c,\u2212s,0],[s,c,0],[0,0,1]] with c=cos\u03b8, s=sin\u03b8.\n\nImplement `rotz(t)`.",
+      "starter": "import math\n\ndef rotz(t):\n    pass\n",
+      "solution": "import math\n\ndef rotz(t):\n    c, s = math.cos(t), math.sin(t)\n    return [[c,-s,0],[s,c,0],[0,0,1]]\n",
+      "tests": [
+        {
+          "args": [
+            0
+          ],
+          "expected": [
+            [
+              1.0,
+              -0.0,
+              0
+            ],
+            [
+              0.0,
+              1.0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "args": [
+            1.5707963267948966
+          ],
+          "expected": [
+            [
+              0.0,
+              -1.0,
+              0
+            ],
+            [
+              1.0,
+              0.0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-matmul",
+      "title": "3\u00d73 Matrix Multiply",
+      "difficulty": "Medium",
+      "func": "matmul3",
+      "tags": [
+        "linalg"
+      ],
+      "prompt": "Composing rotations is matrix multiplication. Implement `matmul3(A, B)` for two 3\u00d73 matrices (no numpy).",
+      "starter": "def matmul3(A, B):\n    pass\n",
+      "solution": "def matmul3(A, B):\n    return [[sum(A[i][k]*B[k][j] for k in range(3))\n             for j in range(3)] for i in range(3)]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                7,
+                8,
+                9
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              6
+            ],
+            [
+              7,
+              8,
+              9
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-angle",
+      "title": "Rotation Angle from R",
+      "difficulty": "Medium",
+      "func": "rot_angle",
+      "tags": [
+        "exp-coords"
+      ],
+      "prompt": "The exponential-coordinate angle of R \u2208 SO(3) is \u03b8 = arccos((tr R \u2212 1)/2). Clamp the argument to [\u22121,1].\n\nImplement `rot_angle(R)`.",
+      "starter": "import math\n\ndef rot_angle(R):\n    pass\n",
+      "solution": "import math\n\ndef rot_angle(R):\n    tr = R[0][0]+R[1][1]+R[2][2]\n    return math.acos(max(-1.0, min(1.0, (tr-1)/2)))\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": 1.570796327
+        },
+        {
+          "args": [
+            [
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": 3.141592654
+        }
+      ]
+    }
+  ],
+  "ch04": [
+    {
+      "id": "ch04-transinv",
+      "title": "Inverse of a Homogeneous Transform",
+      "difficulty": "Medium",
+      "func": "trans_inv",
+      "tags": [
+        "se3"
+      ],
+      "prompt": "T = [[R,p],[0,1]] \u2208 SE(3) has inverse [[R\u1d40,\u2212R\u1d40p],[0,1]].\n\nImplement `trans_inv(T)` for a 4\u00d74 list.",
+      "starter": "def trans_inv(T):\n    pass\n",
+      "solution": "def trans_inv(T):\n    R=[[T[i][j] for j in range(3)] for i in range(3)]\n    p=[T[i][3] for i in range(3)]\n    Rt=[[R[j][i] for j in range(3)] for i in range(3)]\n    q=[-sum(Rt[i][k]*p[k] for k in range(3)) for i in range(3)]\n    return [Rt[0]+[q[0]],Rt[1]+[q[1]],Rt[2]+[q[2]],[0,0,0,1]]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                1,
+                0,
+                -2
+              ],
+              [
+                0,
+                0,
+                1,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              0,
+              0,
+              -3
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              -5
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              1,
+              0,
+              -2
+            ],
+            [
+              -1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              -3
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch04-rptotrans",
+      "title": "Build Transform from (R, p)",
+      "difficulty": "Easy",
+      "func": "rp_to_trans",
+      "tags": [
+        "se3"
+      ],
+      "prompt": "Assemble T = [[R,p],[0,1]] from a 3\u00d73 R and 3-vector p.\n\nImplement `rp_to_trans(R, p)`.",
+      "starter": "def rp_to_trans(R, p):\n    pass\n",
+      "solution": "def rp_to_trans(R, p):\n    return [R[0]+[p[0]], R[1]+[p[1]], R[2]+[p[2]], [0,0,0,1]]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              1,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              -1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch04-transtorp",
+      "title": "Split Transform into (R, p)",
+      "difficulty": "Easy",
+      "func": "trans_to_rp",
+      "tags": [
+        "se3"
+      ],
+      "prompt": "Extract the rotation and translation from a 4\u00d74 T. Return `[R, p]` where R is 3\u00d73 and p is a 3-vector.\n\nImplement `trans_to_rp(T)`.",
+      "starter": "def trans_to_rp(T):\n    pass\n",
+      "solution": "def trans_to_rp(T):\n    R = [[T[i][j] for j in range(3)] for i in range(3)]\n    p = [T[i][3] for i in range(3)]\n    return [R, p]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0,
+                0,
+                7
+              ],
+              [
+                0,
+                1,
+                0,
+                8
+              ],
+              [
+                0,
+                0,
+                1,
+                9
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            [
+              7,
+              8,
+              9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch04-fk2r",
+      "title": "Planar 2R Forward Kinematics",
+      "difficulty": "Easy",
+      "func": "fk_2r",
+      "tags": [
+        "poe"
+      ],
+      "prompt": "Planar 2R arm: x = L1c1 + L2c12, y = L1s1 + L2s12 (c12 = cos(\u03b81+\u03b82)).\n\nImplement `fk_2r(L1, L2, t1, t2)` \u2192 [x, y].",
+      "starter": "import math\n\ndef fk_2r(L1, L2, t1, t2):\n    pass\n",
+      "solution": "import math\n\ndef fk_2r(L1, L2, t1, t2):\n    return [L1*math.cos(t1)+L2*math.cos(t1+t2),\n            L1*math.sin(t1)+L2*math.sin(t1+t2)]\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "expected": [
+            2.0,
+            0.0
+          ]
+        },
+        {
+          "args": [
+            1,
+            1,
+            1.5707963267948966,
+            0
+          ],
+          "expected": [
+            0.0,
+            2.0
+          ]
+        },
+        {
+          "args": [
+            2,
+            1,
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "expected": [
+            -1.0,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch04-fk3r",
+      "title": "Planar 3R Forward Kinematics",
+      "difficulty": "Medium",
+      "func": "fk_3r",
+      "tags": [
+        "poe"
+      ],
+      "prompt": "Planar 3R arm end-effector pose is [x, y, \u03c6] with \u03c6 = \u03b81+\u03b82+\u03b83 and x,y the chained link tips.\n\nImplement `fk_3r(L1, L2, L3, t1, t2, t3)`.",
+      "starter": "import math\n\ndef fk_3r(L1, L2, L3, t1, t2, t3):\n    pass\n",
+      "solution": "import math\n\ndef fk_3r(L1, L2, L3, t1, t2, t3):\n    a, b, c = t1, t1+t2, t1+t2+t3\n    x = L1*math.cos(a)+L2*math.cos(b)+L3*math.cos(c)\n    y = L1*math.sin(a)+L2*math.sin(b)+L3*math.sin(c)\n    return [x, y, c]\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "expected": [
+            3.0,
+            0.0,
+            0
+          ]
+        },
+        {
+          "args": [
+            1,
+            1,
+            1,
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "expected": [
+            0.0,
+            3.0,
+            1.570796327
+          ]
+        },
+        {
+          "args": [
+            1,
+            1,
+            1,
+            1.5707963267948966,
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "expected": [
+            -1.0,
+            0.0,
+            4.71238898
+          ]
+        }
+      ]
+    }
+  ],
+  "ch05": [
+    {
+      "id": "ch05-jac2r",
+      "title": "Planar 2R Jacobian",
+      "difficulty": "Medium",
+      "func": "jacobian_2r",
+      "tags": [
+        "jacobian"
+      ],
+      "prompt": "J = [[\u2212L1s1\u2212L2s12, \u2212L2s12],[L1c1+L2c12, L2c12]].\n\nImplement `jacobian_2r(L1, L2, t1, t2)` (2\u00d72).",
+      "starter": "import math\n\ndef jacobian_2r(L1, L2, t1, t2):\n    pass\n",
+      "solution": "import math\n\ndef jacobian_2r(L1, L2, t1, t2):\n    s1,c1=math.sin(t1),math.cos(t1)\n    s12,c12=math.sin(t1+t2),math.cos(t1+t2)\n    return [[-L1*s1-L2*s12,-L2*s12],[L1*c1+L2*c12,L2*c12]]\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "expected": [
+            [
+              -0.0,
+              -0.0
+            ],
+            [
+              2.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "args": [
+            1,
+            1,
+            1.5707963267948966,
+            1.5707963267948966
+          ],
+          "expected": [
+            [
+              -1.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch05-det",
+      "title": "2\u00d72 Determinant",
+      "difficulty": "Easy",
+      "func": "det2",
+      "tags": [
+        "jacobian"
+      ],
+      "prompt": "Implement `det2(J)` = J\u2080\u2080\u00b7J\u2081\u2081 \u2212 J\u2080\u2081\u00b7J\u2081\u2080.",
+      "starter": "def det2(J):\n    pass\n",
+      "solution": "def det2(J):\n    return J[0][0]*J[1][1]-J[0][1]*J[1][0]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          ],
+          "expected": 0
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "id": "ch05-singular",
+      "title": "Detect a Singularity",
+      "difficulty": "Easy",
+      "func": "is_singular",
+      "tags": [
+        "singularity"
+      ],
+      "prompt": "A 2\u00d72 Jacobian is singular when |det J| < 1e-9. Implement `is_singular(J)` \u2192 bool.",
+      "starter": "def is_singular(J):\n    pass\n",
+      "solution": "def is_singular(J):\n    d = J[0][0]*J[1][1]-J[0][1]*J[1][0]\n    return abs(d) < 1e-9\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          ],
+          "expected": true
+        }
+      ]
+    },
+    {
+      "id": "ch05-manip",
+      "title": "Manipulability Measure",
+      "difficulty": "Medium",
+      "func": "manipulability",
+      "tags": [
+        "manipulability"
+      ],
+      "prompt": "For a square Jacobian, the manipulability \u03bc = \u221a(det(JJ\u1d40)) = |det J|.\n\nImplement `manipulability(J)` for a 2\u00d72 J.",
+      "starter": "def manipulability(J):\n    pass\n",
+      "solution": "def manipulability(J):\n    return abs(J[0][0]*J[1][1]-J[0][1]*J[1][0])\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "id": "ch05-statics",
+      "title": "Statics: Joint Torques \u03c4 = J\u1d40F",
+      "difficulty": "Medium",
+      "func": "joint_torques",
+      "tags": [
+        "statics"
+      ],
+      "prompt": "Static equilibrium maps an end-effector wrench F to joint torques \u03c4 = J\u1d40 F. For a 2\u00d72 J and 2-vector F, return [\u03c41, \u03c42].\n\nImplement `joint_torques(J, F)`.",
+      "starter": "def joint_torques(J, F):\n    pass\n",
+      "solution": "def joint_torques(J, F):\n    return [J[0][0]*F[0]+J[1][0]*F[1],\n            J[0][1]*F[0]+J[1][1]*F[1]]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "expected": [
+            5,
+            7
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            3,
+            -2
+          ]
+        }
+      ]
+    }
+  ],
+  "ch06": [
+    {
+      "id": "ch06-ik2r",
+      "title": "IK: Elbow Angle",
+      "difficulty": "Medium",
+      "func": "ik_2r_th2",
+      "tags": [
+        "analytic-ik"
+      ],
+      "prompt": "cos\u03b82 = (x\u00b2+y\u00b2\u2212L1\u00b2\u2212L2\u00b2)/(2L1L2); \u03b82 = arccos(clamp(cos\u03b82)). Implement `ik_2r_th2(L1, L2, x, y)`.",
+      "starter": "import math\n\ndef ik_2r_th2(L1, L2, x, y):\n    pass\n",
+      "solution": "import math\n\ndef ik_2r_th2(L1, L2, x, y):\n    c2=(x*x+y*y-L1*L1-L2*L2)/(2*L1*L2)\n    return math.acos(max(-1.0,min(1.0,c2)))\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "expected": 1.570796327
+        },
+        {
+          "args": [
+            1,
+            1,
+            2,
+            0
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "expected": 0.0
+        }
+      ]
+    },
+    {
+      "id": "ch06-reach",
+      "title": "Is the Target Reachable?",
+      "difficulty": "Easy",
+      "func": "ik_reachable",
+      "tags": [
+        "analytic-ik"
+      ],
+      "prompt": "A planar 2R arm reaches (x,y) iff |L1\u2212L2| \u2264 \u221a(x\u00b2+y\u00b2) \u2264 L1+L2.\n\nImplement `ik_reachable(L1, L2, x, y)` \u2192 bool.",
+      "starter": "import math\n\ndef ik_reachable(L1, L2, x, y):\n    pass\n",
+      "solution": "import math\n\ndef ik_reachable(L1, L2, x, y):\n    r=math.hypot(x,y)\n    return abs(L1-L2)-1e-9 <= r <= L1+L2+1e-9\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            1,
+            1,
+            3,
+            0
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            2,
+            1,
+            0.5,
+            0
+          ],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "ch06-loc",
+      "title": "Law of Cosines (angle)",
+      "difficulty": "Easy",
+      "func": "law_of_cosines",
+      "tags": [
+        "analytic-ik"
+      ],
+      "prompt": "Angle opposite side c in a triangle with sides a,b,c: \u03b3 = arccos((a\u00b2+b\u00b2\u2212c\u00b2)/(2ab)).\n\nImplement `law_of_cosines(a, b, c)`.",
+      "starter": "import math\n\ndef law_of_cosines(a, b, c):\n    pass\n",
+      "solution": "import math\n\ndef law_of_cosines(a, b, c):\n    return math.acos(max(-1.0,min(1.0,(a*a+b*b-c*c)/(2*a*b))))\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1,
+            1
+          ],
+          "expected": 1.047197551
+        },
+        {
+          "args": [
+            3,
+            4,
+            5
+          ],
+          "expected": 1.570796327
+        },
+        {
+          "args": [
+            2,
+            2,
+            2
+          ],
+          "expected": 1.047197551
+        }
+      ]
+    }
+  ],
+  "ch07": [
+    {
+      "id": "ch07-stewart",
+      "title": "Stewart Platform Mobility",
+      "difficulty": "Medium",
+      "func": "grubler",
+      "tags": [
+        "parallel"
+      ],
+      "prompt": "The 6-UPS Stewart platform: m=6, N=14 links, J=18 joints, each leg's joints contribute 2+1+3 freedoms. Use `grubler(m, N, J, fs)`; the result should be 6.",
+      "starter": "def grubler(m, N, J, fs):\n    pass\n",
+      "solution": "def grubler(m, N, J, fs):\n    return m * (N - 1 - J) + sum(fs)\n",
+      "tests": [
+        {
+          "args": [
+            6,
+            14,
+            18,
+            [
+              2,
+              1,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1,
+              3,
+              2,
+              1,
+              3
+            ]
+          ],
+          "expected": 6
+        }
+      ]
+    },
+    {
+      "id": "ch07-3rrr",
+      "title": "Planar 3-RRR Parallel Robot",
+      "difficulty": "Medium",
+      "func": "grubler",
+      "tags": [
+        "parallel"
+      ],
+      "prompt": "A planar 3-RRR parallel manipulator has m=3, N=8, J=9, all 1-DOF joints. Confirm dof = 3 with `grubler`.",
+      "starter": "def grubler(m, N, J, fs):\n    pass\n",
+      "solution": "def grubler(m, N, J, fs):\n    return m * (N - 1 - J) + sum(fs)\n",
+      "tests": [
+        {
+          "args": [
+            3,
+            8,
+            9,
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": 3
+        },
+        {
+          "args": [
+            3,
+            5,
+            6,
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "expected": 0
+        }
+      ]
+    }
+  ],
+  "ch08": [
+    {
+      "id": "ch08-torque",
+      "title": "Single-Joint Inverse Dynamics",
+      "difficulty": "Medium",
+      "func": "joint_torque",
+      "tags": [
+        "lagrangian"
+      ],
+      "prompt": "A pendulum joint: \u03c4 = I\u00b7\u03b8\u0308 + m\u00b7g\u00b7l\u00b7sin\u03b8. Implement `joint_torque(I, ddth, m, g, l, th)`.",
+      "starter": "import math\n\ndef joint_torque(I, ddth, m, g, l, th):\n    pass\n",
+      "solution": "import math\n\ndef joint_torque(I, ddth, m, g, l, th):\n    return I*ddth + m*g*l*math.sin(th)\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            0,
+            1,
+            9.81,
+            1,
+            1.5707963267948966
+          ],
+          "expected": 9.81
+        },
+        {
+          "args": [
+            0.5,
+            2,
+            2,
+            9.81,
+            0.5,
+            0
+          ],
+          "expected": 1.0
+        },
+        {
+          "args": [
+            1,
+            1,
+            1,
+            9.81,
+            1,
+            0.5235987755982988
+          ],
+          "expected": 5.905
+        }
+      ]
+    },
+    {
+      "id": "ch08-ke",
+      "title": "Kinetic Energy \u00bdq\u0307\u1d40M(q)q\u0307",
+      "difficulty": "Medium",
+      "func": "kinetic_energy",
+      "tags": [
+        "mass-matrix"
+      ],
+      "prompt": "With mass matrix M and joint velocity q\u0307, KE = \u00bd q\u0307\u1d40 M q\u0307. Implement `kinetic_energy(M, v)` for n\u00d7n M and length-n v.",
+      "starter": "def kinetic_energy(M, v):\n    pass\n",
+      "solution": "def kinetic_energy(M, v):\n    n = len(v)\n    return 0.5*sum(v[i]*M[i][j]*v[j] for i in range(n) for j in range(n))\n",
+      "tests": [
+        {
+          "args": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "expected": 2.0
+        },
+        {
+          "args": [
+            [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ch08-rotke",
+      "title": "Rotational Kinetic Energy",
+      "difficulty": "Easy",
+      "func": "rotational_ke",
+      "tags": [
+        "dynamics"
+      ],
+      "prompt": "Spinning body: KE = \u00bd I \u03c9\u00b2. Implement `rotational_ke(I, w)`.",
+      "starter": "def rotational_ke(I, w):\n    pass\n",
+      "solution": "def rotational_ke(I, w):\n    return 0.5*I*w*w\n",
+      "tests": [
+        {
+          "args": [
+            2,
+            3
+          ],
+          "expected": 9.0
+        },
+        {
+          "args": [
+            1,
+            0
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            0.5,
+            4
+          ],
+          "expected": 4.0
+        }
+      ]
+    }
+  ],
+  "ch09": [
+    {
+      "id": "ch09-cubic",
+      "title": "Cubic Time Scaling",
+      "difficulty": "Easy",
+      "func": "cubic",
+      "tags": [
+        "time-scaling"
+      ],
+      "prompt": "s(t) = 3(t/Tf)\u00b2 \u2212 2(t/Tf)\u00b3, s\u2208[0,1]. Implement `cubic(Tf, t)`.",
+      "starter": "def cubic(Tf, t):\n    pass\n",
+      "solution": "def cubic(Tf, t):\n    a = t/Tf\n    return 3*a**2 - 2*a**3\n",
+      "tests": [
+        {
+          "args": [
+            2,
+            0
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            2,
+            1
+          ],
+          "expected": 0.5
+        },
+        {
+          "args": [
+            2,
+            2
+          ],
+          "expected": 1.0
+        },
+        {
+          "args": [
+            5,
+            2.5
+          ],
+          "expected": 0.5
+        }
+      ]
+    },
+    {
+      "id": "ch09-cubicdot",
+      "title": "Cubic Scaling Velocity \u1e61(t)",
+      "difficulty": "Medium",
+      "func": "cubic_dot",
+      "tags": [
+        "time-scaling"
+      ],
+      "prompt": "\u1e61(t) = (6/Tf)\u00b7(t/Tf)\u00b7(1 \u2212 t/Tf). Implement `cubic_dot(Tf, t)`. (Peak speed is at the midpoint.)",
+      "starter": "def cubic_dot(Tf, t):\n    pass\n",
+      "solution": "def cubic_dot(Tf, t):\n    a = t/Tf\n    return (6/Tf)*a*(1-a)\n",
+      "tests": [
+        {
+          "args": [
+            2,
+            0
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            2,
+            1
+          ],
+          "expected": 0.75
+        },
+        {
+          "args": [
+            2,
+            2
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            4,
+            2
+          ],
+          "expected": 0.375
+        }
+      ]
+    },
+    {
+      "id": "ch09-quintic",
+      "title": "Quintic Time Scaling",
+      "difficulty": "Medium",
+      "func": "quintic",
+      "tags": [
+        "time-scaling"
+      ],
+      "prompt": "s(t) = 10(t/Tf)\u00b3 \u2212 15(t/Tf)\u2074 + 6(t/Tf)\u2075 (zero end velocity AND acceleration).\n\nImplement `quintic(Tf, t)`.",
+      "starter": "def quintic(Tf, t):\n    pass\n",
+      "solution": "def quintic(Tf, t):\n    a = t/Tf\n    return 10*a**3 - 15*a**4 + 6*a**5\n",
+      "tests": [
+        {
+          "args": [
+            2,
+            0
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            2,
+            1
+          ],
+          "expected": 0.5
+        },
+        {
+          "args": [
+            2,
+            2
+          ],
+          "expected": 1.0
+        },
+        {
+          "args": [
+            4,
+            1
+          ],
+          "expected": 0.103515625
+        }
+      ]
+    },
+    {
+      "id": "ch09-line",
+      "title": "Straight-Line Path Point",
+      "difficulty": "Easy",
+      "func": "straight_line",
+      "tags": [
+        "path"
+      ],
+      "prompt": "A straight-line path: X(s) = Xstart + s\u00b7(Xend \u2212 Xstart), elementwise. Implement `straight_line(start, end, s)` for equal-length vectors.",
+      "starter": "def straight_line(start, end, s):\n    pass\n",
+      "solution": "def straight_line(start, end, s):\n    return [start[i] + s*(end[i]-start[i]) for i in range(len(start))]\n",
+      "tests": [
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              4
+            ],
+            0.5
+          ],
+          "expected": [
+            5.0,
+            2.0
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              1
+            ],
+            0.0
+          ],
+          "expected": [
+            1.0,
+            2.0,
+            3.0
+          ]
+        },
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            1.0
+          ],
+          "expected": [
+            2.0,
+            2.0
+          ]
+        }
+      ]
+    }
+  ],
+  "ch10": [
+    {
+      "id": "ch10-neighbors",
+      "title": "Grid Neighbors (4-connected)",
+      "difficulty": "Easy",
+      "func": "grid_neighbors",
+      "tags": [
+        "grid"
+      ],
+      "prompt": "Return the valid 4-connected neighbors of cell (r,c) inside an rows\u00d7cols grid, as a **sorted** list of [r,c].\n\nImplement `grid_neighbors(r, c, rows, cols)`.",
+      "starter": "def grid_neighbors(r, c, rows, cols):\n    pass\n",
+      "solution": "def grid_neighbors(r, c, rows, cols):\n    out=[]\n    for dr,dc in ((-1,0),(1,0),(0,-1),(0,1)):\n        nr,nc=r+dr,c+dc\n        if 0<=nr<rows and 0<=nc<cols: out.append([nr,nc])\n    return sorted(out)\n",
+      "tests": [
+        {
+          "args": [
+            0,
+            0,
+            3,
+            3
+          ],
+          "expected": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "args": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "expected": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "args": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "expected": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-manhattan",
+      "title": "Manhattan Heuristic",
+      "difficulty": "Easy",
+      "func": "manhattan",
+      "tags": [
+        "heuristic"
+      ],
+      "prompt": "A* on a 4-connected grid uses h = |\u0394r| + |\u0394c|. Implement `manhattan(a, b)` for cells [r,c].",
+      "starter": "def manhattan(a, b):\n    pass\n",
+      "solution": "def manhattan(a, b):\n    return abs(a[0]-b[0]) + abs(a[1]-b[1])\n",
+      "tests": [
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "expected": 7
+        },
+        {
+          "args": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "expected": 0
+        },
+        {
+          "args": [
+            [
+              5,
+              1
+            ],
+            [
+              0,
+              9
+            ]
+          ],
+          "expected": 13
+        }
+      ]
+    },
+    {
+      "id": "ch10-euclid",
+      "title": "Euclidean Distance",
+      "difficulty": "Easy",
+      "func": "euclidean",
+      "tags": [
+        "heuristic"
+      ],
+      "prompt": "Straight-line heuristic h = \u221a(\u0394r\u00b2 + \u0394c\u00b2). Implement `euclidean(a, b)`.",
+      "starter": "import math\n\ndef euclidean(a, b):\n    pass\n",
+      "solution": "import math\n\ndef euclidean(a, b):\n    return math.hypot(a[0]-b[0], a[1]-b[1])\n",
+      "tests": [
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "expected": 5.0
+        },
+        {
+          "args": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 1.414213562
+        }
+      ]
+    },
+    {
+      "id": "ch10-cheby",
+      "title": "Chebyshev Heuristic (8-connected)",
+      "difficulty": "Easy",
+      "func": "chebyshev",
+      "tags": [
+        "heuristic"
+      ],
+      "prompt": "For an 8-connected grid, h = max(|\u0394r|, |\u0394c|). Implement `chebyshev(a, b)`.",
+      "starter": "def chebyshev(a, b):\n    pass\n",
+      "solution": "def chebyshev(a, b):\n    return max(abs(a[0]-b[0]), abs(a[1]-b[1]))\n",
+      "tests": [
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "expected": 4
+        },
+        {
+          "args": [
+            [
+              2,
+              7
+            ],
+            [
+              5,
+              5
+            ]
+          ],
+          "expected": 3
+        }
+      ]
+    }
+  ],
+  "ch11": [
+    {
+      "id": "ch11-pid",
+      "title": "PID Control Law",
+      "difficulty": "Easy",
+      "func": "pid",
+      "tags": [
+        "feedback"
+      ],
+      "prompt": "u = Kp\u00b7e + Ki\u00b7\u222be + Kd\u00b7\u0117. Implement `pid(Kp, Ki, Kd, e, edot, eint)`.",
+      "starter": "def pid(Kp, Ki, Kd, e, edot, eint):\n    pass\n",
+      "solution": "def pid(Kp, Ki, Kd, e, edot, eint):\n    return Kp*e + Ki*eint + Kd*edot\n",
+      "tests": [
+        {
+          "args": [
+            2,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "expected": 6
+        },
+        {
+          "args": [
+            1,
+            0.5,
+            0.1,
+            2,
+            -1,
+            4
+          ],
+          "expected": 3.9
+        },
+        {
+          "args": [
+            10,
+            1,
+            5,
+            0.2,
+            0.1,
+            0.3
+          ],
+          "expected": 2.8
+        }
+      ]
+    },
+    {
+      "id": "ch11-pd",
+      "title": "PD Set-Point Control",
+      "difficulty": "Medium",
+      "func": "pd_control",
+      "tags": [
+        "feedback"
+      ],
+      "prompt": "PD law toward a desired state: u = Kp\u00b7(\u03b8d \u2212 \u03b8) + Kd\u00b7(\u03b8\u0307d \u2212 \u03b8\u0307).\n\nImplement `pd_control(Kp, Kd, th, thd, th_d, thd_d)` (th_d, thd_d are desired).",
+      "starter": "def pd_control(Kp, Kd, th, thd, th_d, thd_d):\n    pass\n",
+      "solution": "def pd_control(Kp, Kd, th, thd, th_d, thd_d):\n    return Kp*(th_d - th) + Kd*(thd_d - thd)\n",
+      "tests": [
+        {
+          "args": [
+            10,
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          "expected": 10
+        },
+        {
+          "args": [
+            5,
+            1,
+            1,
+            0.5,
+            1,
+            0.5
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            4,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "expected": -11
+        }
+      ]
+    },
+    {
+      "id": "ch11-stable",
+      "title": "PD Stability Condition",
+      "difficulty": "Easy",
+      "func": "stable",
+      "tags": [
+        "error-dynamics"
+      ],
+      "prompt": "\u03b8\u0308\u2091 + Kd\u00b7\u03b8\u0307\u2091 + Kp\u00b7\u03b8\u2091 = 0 is stable iff Kp>0 and Kd>0. Implement `stable(Kp, Kd)` \u2192 bool.",
+      "starter": "def stable(Kp, Kd):\n    pass\n",
+      "solution": "def stable(Kp, Kd):\n    return Kp > 0 and Kd > 0\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            1
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            0,
+            1
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            -2,
+            3
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            5,
+            0
+          ],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "ch11-damping",
+      "title": "Classify Damping",
+      "difficulty": "Medium",
+      "func": "damping_type",
+      "tags": [
+        "error-dynamics"
+      ],
+      "prompt": "Given damping ratio \u03b6, classify the second-order error response: \u03b6>1 'overdamped', \u03b6=1 'critically damped', 0<\u03b6<1 'underdamped'.\n\nImplement `damping_type(zeta)` returning the exact string.",
+      "starter": "def damping_type(zeta):\n    pass\n",
+      "solution": "def damping_type(zeta):\n    if abs(zeta-1) < 1e-9: return 'critically damped'\n    return 'overdamped' if zeta > 1 else 'underdamped'\n",
+      "tests": [
+        {
+          "args": [
+            0.5
+          ],
+          "expected": "underdamped"
+        },
+        {
+          "args": [
+            1.0
+          ],
+          "expected": "critically damped"
+        },
+        {
+          "args": [
+            2.0
+          ],
+          "expected": "overdamped"
+        }
+      ]
+    }
+  ],
+  "ch12": [
+    {
+      "id": "ch12-cone",
+      "title": "Friction Cone Half-Angle",
+      "difficulty": "Easy",
+      "func": "friction_cone_angle",
+      "tags": [
+        "friction"
+      ],
+      "prompt": "\u03b1 = arctan(\u03bc). Implement `friction_cone_angle(mu)` (radians).",
+      "starter": "import math\n\ndef friction_cone_angle(mu):\n    pass\n",
+      "solution": "import math\n\ndef friction_cone_angle(mu):\n    return math.atan(mu)\n",
+      "tests": [
+        {
+          "args": [
+            0
+          ],
+          "expected": 0.0
+        },
+        {
+          "args": [
+            1
+          ],
+          "expected": 0.785398163
+        },
+        {
+          "args": [
+            0.5
+          ],
+          "expected": 0.463647609
+        }
+      ]
+    },
+    {
+      "id": "ch12-incone",
+      "title": "Inside the Friction Cone?",
+      "difficulty": "Easy",
+      "func": "in_friction_cone",
+      "tags": [
+        "friction"
+      ],
+      "prompt": "No slip when |ft| \u2264 \u03bc\u00b7fn (fn \u2265 0). Implement `in_friction_cone(mu, fn, ft)` \u2192 bool.",
+      "starter": "def in_friction_cone(mu, fn, ft):\n    pass\n",
+      "solution": "def in_friction_cone(mu, fn, ft):\n    return abs(ft) <= mu*fn\n",
+      "tests": [
+        {
+          "args": [
+            0.5,
+            10,
+            4
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            0.5,
+            10,
+            6
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            1,
+            2,
+            -2
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            0.3,
+            5,
+            2
+          ],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "ch12-formclosure",
+      "title": "Min Contacts for Form Closure",
+      "difficulty": "Medium",
+      "func": "min_contacts_form_closure",
+      "tags": [
+        "form-closure"
+      ],
+      "prompt": "First-order form closure needs at least 4 frictionless point contacts in the plane, 7 in space.\n\nImplement `min_contacts_form_closure(planar)` (bool \u2192 int).",
+      "starter": "def min_contacts_form_closure(planar):\n    pass\n",
+      "solution": "def min_contacts_form_closure(planar):\n    return 4 if planar else 7\n",
+      "tests": [
+        {
+          "args": [
+            true
+          ],
+          "expected": 4
+        },
+        {
+          "args": [
+            false
+          ],
+          "expected": 7
+        }
+      ]
+    },
+    {
+      "id": "ch12-wrench",
+      "title": "Planar Contact Wrench",
+      "difficulty": "Medium",
+      "func": "contact_wrench",
+      "tags": [
+        "wrench"
+      ],
+      "prompt": "A planar force (fx,fy) applied at point (px,py) produces wrench [m, fx, fy] with moment m = px\u00b7fy \u2212 py\u00b7fx.\n\nImplement `contact_wrench(fx, fy, px, py)`.",
+      "starter": "def contact_wrench(fx, fy, px, py):\n    pass\n",
+      "solution": "def contact_wrench(fx, fy, px, py):\n    return [px*fy - py*fx, fx, fy]\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "expected": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "args": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "expected": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "args": [
+            3,
+            4,
+            1,
+            1
+          ],
+          "expected": [
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "ch13": [
+    {
+      "id": "ch13-diff",
+      "title": "Differential-Drive Chassis Twist",
+      "difficulty": "Medium",
+      "func": "diff_drive",
+      "tags": [
+        "mobile"
+      ],
+      "prompt": "\u03c9 = r(uR\u2212uL)/L, vx = r(uR+uL)/2, vy = 0. Implement `diff_drive(r, L, uL, uR)` \u2192 [\u03c9, vx, vy].",
+      "starter": "def diff_drive(r, L, uL, uR):\n    pass\n",
+      "solution": "def diff_drive(r, L, uL, uR):\n    return [r*(uR-uL)/L, r*(uR+uL)/2, 0]\n",
+      "tests": [
+        {
+          "args": [
+            0.1,
+            0.5,
+            1,
+            1
+          ],
+          "expected": [
+            0.0,
+            0.1,
+            0
+          ]
+        },
+        {
+          "args": [
+            0.1,
+            0.5,
+            -1,
+            1
+          ],
+          "expected": [
+            0.4,
+            0.0,
+            0
+          ]
+        },
+        {
+          "args": [
+            0.05,
+            0.3,
+            2,
+            4
+          ],
+          "expected": [
+            0.333333333,
+            0.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13-wheels",
+      "title": "Diff-Drive Inverse: Wheel Speeds",
+      "difficulty": "Medium",
+      "func": "wheel_speeds_diff",
+      "tags": [
+        "mobile"
+      ],
+      "prompt": "Invert the diff-drive map: given chassis (v, \u03c9) find wheel speeds uL=(2v\u2212\u03c9L)/(2r), uR=(2v+\u03c9L)/(2r).\n\nImplement `wheel_speeds_diff(v, w, r, L)` \u2192 [uL, uR].",
+      "starter": "def wheel_speeds_diff(v, w, r, L):\n    pass\n",
+      "solution": "def wheel_speeds_diff(v, w, r, L):\n    return [(2*v - w*L)/(2*r), (2*v + w*L)/(2*r)]\n",
+      "tests": [
+        {
+          "args": [
+            1,
+            0,
+            0.1,
+            0.5
+          ],
+          "expected": [
+            10.0,
+            10.0
+          ]
+        },
+        {
+          "args": [
+            0,
+            1,
+            0.1,
+            0.5
+          ],
+          "expected": [
+            -2.5,
+            2.5
+          ]
+        },
+        {
+          "args": [
+            0.5,
+            2,
+            0.05,
+            0.3
+          ],
+          "expected": [
+            4.0,
+            16.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13-unicycle",
+      "title": "Unicycle Odometry Step",
+      "difficulty": "Medium",
+      "func": "unicycle_step",
+      "tags": [
+        "odometry"
+      ],
+      "prompt": "Integrate one step (Euler): x' = x + v\u00b7cos\u03c6\u00b7dt, y' = y + v\u00b7sin\u03c6\u00b7dt, \u03c6' = \u03c6 + \u03c9\u00b7dt.\n\nImplement `unicycle_step(x, y, phi, v, w, dt)` \u2192 [x, y, phi].",
+      "starter": "import math\n\ndef unicycle_step(x, y, phi, v, w, dt):\n    pass\n",
+      "solution": "import math\n\ndef unicycle_step(x, y, phi, v, w, dt):\n    return [x + v*math.cos(phi)*dt,\n            y + v*math.sin(phi)*dt,\n            phi + w*dt]\n",
+      "tests": [
+        {
+          "args": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "expected": [
+            1.0,
+            0.0,
+            0
+          ]
+        },
+        {
+          "args": [
+            0,
+            0,
+            1.5707963267948966,
+            2,
+            0,
+            0.5
+          ],
+          "expected": [
+            0.0,
+            1.0,
+            1.570796327
+          ]
+        },
+        {
+          "args": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "expected": [
+            2.0,
+            1.0,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}
